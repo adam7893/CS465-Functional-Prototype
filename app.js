@@ -24,6 +24,12 @@ app.post("/search", function(req, res) {
     console.log(req.body);
 });
 
+var eventPage = fs.readFileSync("public/html/event.html");
+app.get("/event", function(req, res) {
+    res.writeHeader(200, { "Content-Type": "text/html" });
+    res.end(eventPage);
+});
+
 var port = 8000;
 app.listen(port, function () {
     console.log("Listening on port: " + port);
