@@ -1,0 +1,48 @@
+/*body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}*/
+
+/*
+button {
+    margin: 25px 10px 10px 10px;
+}*/
+
+button {
+    margin: 10px 30px 10px 30px;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+.site-name {
+    float: left;
+    color: black;
+    font-size: 18px;
+}
+
+.user {
+    float: right;
+}
+
+#profile-picture {
+    display: inline-block;
+}
+
+#profile-text {
+    display: inline-block;
+}
+
+label {
+    padding: 0 10px 0 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+/*
+.container {
+    padding: 10px 10px 10px 10px;
+}
+*/
