@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>FoodFinder</title>
+
+     <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png">  
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -16,33 +18,59 @@
 
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/calendar.css" rel="stylesheet">
+<!--
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/base_styles.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/ebauth.css"
+    />
+    -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/src/smacss/non_modular/global_header.css"/>
 </head>
 
 <body>
 
     <header>
-        <img src="foodfinder.png" />
 
-        <div class="user">
-            <div id="profile-picture">PROFILE</div>
-            <div id="profile-text">
-                <div id="username">USERNAME</div>
-                <div id="points">points</div>
+        <div id="global-header" class="global-header-container logged-out consumer-header" data-role="header" data-id="main-header">
+            <div class="global-header js-global-header">
+
+                <div>
+                    <!--<img src=http://www.brandcrowd.com/gallery/brands/thumbs/thumb1476343947821.jpg height = 60px width = 120px>-->
+                    <a href="/"><img src=http://4.bp.blogspot.com/-FL5_D-8hy04/Vo6rLGqiTQI/AAAAAAAAAOA/CH_O9PmbmqU/s1600/foodfinder-free-business-logo-design-template.png
+                        height=60px width=120px></a>
+                </div>
+                <div role="navigation" position=fixed top=0px right=0px width=200px height=100px float=right>
+
+                    <div position=fixed top=0px right=0px width=200px height=100px float=right>
+                        <a href="http://google.com"><img src=http://lionhallattorneys.com.ng/wp-content/uploads/2015/12/empty-profile.png width=60px
+                                max-height=100%></a>
+                        <a href="/signup" align="right" class="header-link gh-signup primary-link js-d-track-link js-modal-auth show-large" data-modal-auth-action="signup"
+                            data-event-action="SignupAttempt" data-event-category="header">Sign up</a>
+                        <a href="/login" align="right" class="header-link primary-link js-d-track-link js-modal-auth show-large" data-event-action="LoginAttempt"
+                            data-event-category="header" data-modal-auth-action="login">Log in</a>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
+
     </header>
 
-    <!--
-<a href="/event"><button> Test</button></a>
--->
+<div class="global-mask"></div>
+    <div class="text-default is-centered-block">
+
     <div id="user-type" class="container" style="text-align: center">
-        <button id="host-button" class="btn btn-lg btn-success">HOST</button>
-        <button id="guest-button" class="btn btn-lg btn-default">GUEST</button>
+        <button id="host-button" class="btn btn-lg btn-success" style="color: black">HOST</button>
+        <button id="guest-button" class="btn btn-lg btn-default" style="color: black">GUEST</button>
     </div>
 
     <div id="filters" style="text-align: center">
         <div style="display: inline-block">
-            <button id="time-button" class="btn btn-lg btn-default">
+            <button id="time-button" class="btn btn-lg btn-default" style="color: black">
             Time
             </button>
             <div id="time" class="dropdown closed">
@@ -90,7 +118,7 @@
         </div>
 
         <div style="display: inline-block">
-            <button id="cuisine-button" class="btn btn-lg btn-default" style="display: inline-block">
+            <button id="cuisine-button" class="btn btn-lg btn-default" style="display: inline-block; color: black">
             Cuisine
             </button>
             <div id="cuisine" class="dropdown closed">
@@ -105,7 +133,9 @@
     </div>
 
     <div style="text-align: center; bottom: 10px; position: fixed; width:100%;">
-        <button id="submit" class="btn btn-lg btn-default">Submit</button>
+        <button id="submit" class="btn btn-lg btn-default" style="color: black">Submit</button>
+    </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -118,12 +148,6 @@
             var target = $(event.target);
             delegateClick(target);
         });
-
-        /*$(document).on("mouseover", function (event) {
-            var target = $(event.target);
-            delegateHover(target, true);
-        });*/
-
         setCalendar();
         setCuisine();
     </script>
