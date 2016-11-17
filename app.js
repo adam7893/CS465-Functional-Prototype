@@ -48,6 +48,20 @@ app.get("/signup", function(req, res) {
     res.end(signupPage);
 });
 
+var resultsPage = fs.readFileSync("public/html/4results.html");
+app.get("/results", function(req, res) {
+    res.writeHeader(200, { "Content-Type": "text/html" });
+    res.end(resultsPage);
+});
+
+app.get('/homepageimage.jpg', function(req, res){
+  res.sendFile('/homepageimage.jpg', { root : __dirname});
+});
+
+app.get('/searchpageimage.jpg', function(req, res){
+  res.sendFile('/searchpageimage.jpg', { root : __dirname});
+});
+
 var port = 8000;
 app.listen(port, function () {
     console.log("Listening on port: " + port);
