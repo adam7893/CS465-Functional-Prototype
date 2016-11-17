@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/calendar.css" rel="stylesheet">
     <script type="text/javascript">
         function goToHomePage() {
             window.location.href = "/";
@@ -296,14 +298,53 @@
 
         <div class="dropdown">
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">TIME
+        <div class="btn-group">
+            <div style="display: inline-block">
+                <button id="time-button" class="btn btn-lg btn-default" style="color: black">
+            TIME
             <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Now</a></li>
-                    <li><a href="#">Later</a></li>
-                    <li><a href="#">Tomorrow</a></li>
-                </ul>
+                <div id="time" class="dropdown closed">
+                    <div class="dropdown-menu" style="transform: translate(-50%, 0);position:absolute;left:50%;right:auto;">
+                        <div>
+                            <div class="calendar">
+                                <div class="month">
+                                    <ul>
+                                        <li class="prev">&#10094;</li>
+                                        <li class="next">&#10095;</li>
+                                        <li style="text-align: center">
+                                            August<br>
+                                            <span>2016</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <ul class="weekdays">
+                                    <li>Mo</li>
+                                    <li>Tu</li>
+                                    <li>We</li>
+                                    <li>Th</li>
+                                    <li>Fr</li>
+                                    <li>Sa</li>
+                                    <li>Su</li>
+                                </ul>
+
+                                <ul id="days" class="days">
+                                </ul>
+
+                                <div style="text-align: center">
+                                    <div style="display: inline-block; margin: 0 10px; color: black">
+                                        Start
+                                        <input id="start-time" type="time" value=""></input>
+                                    </div>
+                                    <div style="display: inline-block; color: black">
+                                        End
+                                        <input id="end-time" type="time"></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">PRICE
@@ -315,18 +356,17 @@
                     <li><a href="#">High ($$$)</a></li>
                 </ul>
             </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">CUISINE
+            <div style="display: inline-block">
+                <button id="cuisine-button" class="btn btn-lg btn-default" style="display: inline-block; color: black">
+            CUISINE
             <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">American</a></li>
-                    <li><a href="#">Asian</a></li>
-                    <li><a href="#">BBQ</a></li>
-                    <li><a href="#">Chinese</a></li>
-                    <li><a href="#">Indian</a></li>
-                    <li><a href="#">Italian</a></li>
-                    <li><a href="#">Mexican</a></li>
-                </ul>
+                <div id="cuisine" class="dropdown closed">
+                    <div class="dropdown-menu" style="width:500px">
+                        <ul id="cuisine-list">
+
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">LOCATION
@@ -379,6 +419,18 @@
                 });
             });
         })
+    </script>
+
+    <script src="javascripts/filter.js"></script>
+    <script src="javascripts/search.js"></script>
+
+    <script>
+        $(document).click(function(event) {
+            var target = $(event.target);
+            delegateClick(target);
+        });
+        setCalendar();
+        setCuisine();
     </script>
 
 </body>
