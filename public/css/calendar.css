@@ -8,7 +8,7 @@
 
 /* Month header */
 .month {
-    padding: 70px 25px;
+    padding: 10px 25px;
     width: 100%;
     background: #1abc9c;
 }
@@ -41,7 +41,7 @@
 /* Weekdays (Mon-Sun) */
 .weekdays {
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color:#ddd;
 }
 

@@ -28,6 +28,7 @@ function setCuisine() {
         var label = document.createElement("label");
         label.innerText = cuisineType;
         label.htmlFor = cuisineType;
+        label.style["color"] = "black";
 
         divContainer.appendChild(checkbox);
         divContainer.appendChild(label);
