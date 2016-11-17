@@ -62,7 +62,7 @@ app.get('/searchpageimage.jpg', function(req, res){
   res.sendFile('/searchpageimage.jpg', { root : __dirname});
 });
 
-var port = 80;
+var port = 443;
 app.listen(port, function () {
     console.log("Listening on port: " + port);
 });
