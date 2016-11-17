@@ -1,4 +1,299 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function goToHomePage() {
+            window.location.href = "1home.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToLoginPage() {
+            window.location.href = "2userlogin.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSignupPage() {
+            window.location.href = "2usersignup.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSearchPage() {
+            window.location.href = "3search.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToResultsPage() {
+            window.location.href = "4results.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToEventPage() {
+            window.location.href = "5event_page.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToAttendedEventsPage() {
+            window.location.href = "6attended_events.html";
+        }
+    </script>
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .sidebar {
+            background-color: #f6f6f6;
+            color: #f4511e;
+            padding: 50px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+        
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+        
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+        
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+        
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+        
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.5s;
+        }
+        
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+        
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+        .panel-footer {
+            background-color: white !important;
+        }
+        
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        
+        .slideanim {
+            visibility: hidden;
+        }
+        
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#myPage" onclick="goToHomePage();">FoodFinder</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" onclick="goToEventPage();">EVENTS</a></li>
+                    <li><a href="#signup" onclick="goToSignupPage();">SIGN UP</a></li>
+                    <li><a href="#login" onclick="goToLoginPage();">LOG IN</a></li>
+                    <li><a href="#profile" onclick="goToAttendedEventsPage();">PROFILE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--
+
+
+<!DOCTYPE html>
 
 
 <html lang="en-us">
@@ -20,279 +315,92 @@
     <meta name="description" content="FoodFinder" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
+-->
 
 
-<script type="text/javascript" charset="utf-8" crossorigin="anonymous">!function(a,b){if(a.EB=a.EB||{},EB.renderFonts=function(a){for(var c="",d=b.createElement("style"),e=0,f;f=a[e];e++)c+="@font-face{font-family:'Benton Sans';font-weight:"+f.weight+";font-style:"+f.style+";src:url(data:application/font-woff;base64,"+f.base64+") format('woff');}";d.styleSheet&&!d.sheet?d.styleSheet.cssText=c:d.appendChild(b.createTextNode(c)),b.getElementsByTagName("head")[0].appendChild(d),b.documentElement.className+=" font-has-loaded"},EB.readWriteFontFromLocalStorage=function(a){for(var c=0;c<a.BENTON_PROPERTIES.oldVersions.length;c++)localStorage.removeItem(a.BENTON_PROPERTIES.oldVersions[c]);var d=JSON.parse(localStorage.getItem(a.BENTON_PROPERTIES.version));if(d)EB.renderFonts(d);else{EB.shouldRenderFonts=!0;var e=b.createElement("script");e.src=a.BENTON_PROPERTIES.src,b.getElementsByTagName("head")[0].appendChild(e),setTimeout(function(){EB.shouldRenderFonts=!1},3e3)}},a.localStorage)try{localStorage.setItem("localStorage",1),localStorage.removeItem("localStorage"),EB.readWriteFontFromLocalStorage(a)}catch(c){Storage.prototype._setItem=Storage.prototype.setItem,Storage.prototype.setItem=function(){}}}(window,document);</script>
-
- 
- <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png">  
-    
-  <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/base_styles.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/src/smacss/non_modular/global_header.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/ebauth.css" />
-
-  
-
-  <script type="text/javascript" charset="utf-8" crossorigin="anonymous">(function(w, d) {
-    'use strict';
-
-    var html = d.documentElement,
-        hasBrowserSupport,
-        featureCount,
-        features = ['transform'], // Array of CSS features you want to detect
-        featureLength = features.length;
-
-    hasBrowserSupport = function(prop) {
-        var div = document.createElement('div'),
-            vendors = 'Khtml Ms O Moz Webkit'.split(' '),
-            len = vendors.length;
-
-        if ( prop in div.style ) {
-            return true;
-        }
-
-        prop = prop.replace(/^[a-z]/, function(val) {
-            return val.toUpperCase();
-        });
-
-        while(len--) {
-            if ( vendors[len] + prop in div.style ) {
-                // browser supports box-shadow. Do what you need.  
-                // Or use a bang (!) to test if the browser doesn't.  
-                return true;
+    <script type="text/javascript" charset="utf-8" crossorigin="anonymous">
+        ! function(a, b) {
+            if (a.EB = a.EB || {}, EB.renderFonts = function(a) {
+                    for (var c = "", d = b.createElement("style"), e = 0, f; f = a[e]; e++) c += "@font-face{font-family:'Benton Sans';font-weight:" + f.weight + ";font-style:" + f.style + ";src:url(data:application/font-woff;base64," + f.base64 + ") format('woff');}";
+                    d.styleSheet && !d.sheet ? d.styleSheet.cssText = c : d.appendChild(b.createTextNode(c)), b.getElementsByTagName("head")[0].appendChild(d), b.documentElement.className += " font-has-loaded"
+                }, EB.readWriteFontFromLocalStorage = function(a) {
+                    for (var c = 0; c < a.BENTON_PROPERTIES.oldVersions.length; c++) localStorage.removeItem(a.BENTON_PROPERTIES.oldVersions[c]);
+                    var d = JSON.parse(localStorage.getItem(a.BENTON_PROPERTIES.version));
+                    if (d) EB.renderFonts(d);
+                    else {
+                        EB.shouldRenderFonts = !0;
+                        var e = b.createElement("script");
+                        e.src = a.BENTON_PROPERTIES.src, b.getElementsByTagName("head")[0].appendChild(e), setTimeout(function() {
+                            EB.shouldRenderFonts = !1
+                        }, 3e3)
+                    }
+                }, a.localStorage) try {
+                localStorage.setItem("localStorage", 1), localStorage.removeItem("localStorage"), EB.readWriteFontFromLocalStorage(a)
+            } catch (c) {
+                Storage.prototype._setItem = Storage.prototype.setItem, Storage.prototype.setItem = function() {}
             }
-        }
-        
-        return false;
-    };
-
-    for (featureCount = 0; featureCount < featureLength; featureCount++) {
-        html.className += (hasBrowserSupport(features[featureCount]) ? ' css-' + features[featureCount].toLowerCase() + '-support' : '');
-    }
-
-})(window, document, undefined);
-</script>
+        }(window, document);
+    </script>
 
 
-  
+    <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/base_styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/src/smacss/non_modular/global_header.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22772-rc2016-11-14_12.04-60fbcdc/django/css/production/ebauth.css" />
+
+
+
+    <script type="text/javascript" charset="utf-8" crossorigin="anonymous">
+        (function(w, d) {
+            'use strict';
+
+            var html = d.documentElement,
+                hasBrowserSupport,
+                featureCount,
+                features = ['transform'], // Array of CSS features you want to detect
+                featureLength = features.length;
+
+            hasBrowserSupport = function(prop) {
+                var div = document.createElement('div'),
+                    vendors = 'Khtml Ms O Moz Webkit'.split(' '),
+                    len = vendors.length;
+
+                if (prop in div.style) {
+                    return true;
+                }
+
+                prop = prop.replace(/^[a-z]/, function(val) {
+                    return val.toUpperCase();
+                });
+
+                while (len--) {
+                    if (vendors[len] + prop in div.style) {
+                        // browser supports box-shadow. Do what you need.  
+                        // Or use a bang (!) to test if the browser doesn't.  
+                        return true;
+                    }
+                }
+
+                return false;
+            };
+
+            for (featureCount = 0; featureCount < featureLength; featureCount++) {
+                html.className += (hasBrowserSupport(features[featureCount]) ? ' css-' + features[featureCount].toLowerCase() + '-support' : '');
+            }
+
+        })(window, document, undefined);
+    </script>
+
+
+
+
+    <!--
    <title>FoodFinder</title>
 </head>
 <body class="lang-en en-us  js-d-track-event-links" data-automation=''>
     
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }
-  .sidebar {
-      background-color: #f6f6f6;
-      color: #f4511e;
-      padding: 50px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
-  }
-  .logo {
-      color: #f4511e;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #f4511e;
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #f4511e !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #f4511e;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">FoodFinder</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">EVENTS</a></li>
-        <li><a href="#signup">SIGN UP</a></li>
-        <li><a href="#login">LOG IN</a></li>
-        <li><a href="#profile">PROFILE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- old header
 <header>
 
 <div id="global-header"
@@ -323,78 +431,102 @@
 
 </header>
 -->
-    
-<div class="global-mask"></div>
+
+    <div class="global-mask"></div>
 
 
 
     <div id="authentication-container" class="text-default is-centered-block">
-    
-    
 
 
-<div class="l-pad-vert-4 l-sm-pad-vert-3 l-pad-hor-2 pod js-authentication-layout">
-    <div class="text--centered">
-        
-        <h1 class="text-large">Log in</h1>
-        <p class="l-mar-top-1">
-            Don't have an account? <a class="js-switch-to-login js-d-track-event" data-event-action="LoginAttempt" data-event-category="signup" data-event-label="switch" href="/signup">Sign up.</a>
-        </p>
-    </div>
-    <form class="l-mar-top-3 responsive-form" id="login_form" method="post" action="/signup">
-        <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='MMycqOe2476jScnxboN8pX463opJ1aoR'/></div>
-        <input type="hidden" name="auth_backend" value="user_password"/>
-        <input type="hidden" name="referrer" value=''/>
-        <input type="hidden" name="forward" value=''/>
-        <input type="hidden" name="skip_splash" value=''/>
-        <input type="hidden" name="signup_page" value=''/>
-        <input type="hidden" name="user_type" value=''/>
-        <input type="hidden" name="user_type_sig" value=''/>
-        <div class="js-notification l-mar-top-3"></div>
-        <div class="js-current-component">
-            
-
-<div class="l-mar-top-3">
-    <label class="is-hidden-accessible" for="signup-email">Email address</label>
-    <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        value=""
-        id="signup-email"
-    >
-    <div class="js-error-for-email form__field-error is-hidden"></div>
-</div>
-<div class="l-mar-top-3">
-    <label class="is-hidden-accessible" for="signup-password">Password</label>
-    <input
-        name="password"
-        type="password"
-        placeholder="Password"
-        value=""
-        id="signup-password"
-    >
-    <div class="js-error-for-passwd form__field-error is-hidden"></div>
-</div>
-<div class="js-captcha-form-row l-mar-top-3 form__row is-hidden">
-    <div id="js-captcha-field" class="js-captcha-field"></div>
-    <div class="js-error-for-captcha form__field-error is-hidden"></div>
-</div>
-<div class="l-mar-top-3" align=center>
-    <a href = "/attendedevents"><button id="toggle" type="button" onclick="myFunction()" class="micro-ticket-box__btn btn btn--epic">Log In</button></a>
-</div>
-
-</div>
-</form>
-</div>
 
 
-<div id="auth-modal" class="g-cell g-cell--no-gutters g-cell-12-12 g-cell-md-8-12 mfp-hide auth-modal js-auth-modal">
-    <div id="authentication-container" class="text-default auth-container"></div>
-</div>
+        <div class="l-pad-vert-4 l-sm-pad-vert-3 l-pad-hor-2 pod js-authentication-layout">
+            <div class="text--centered">
+
+                <h1 class="text-large">Log in</h1>
+                <p class="l-mar-top-1">
+                    Don't have an account? <a class="js-switch-to-login js-d-track-event" data-event-action="LoginAttempt" data-event-category="signup" data-event-label="switch" href="/signup">Sign up.</a>
+                </p>
+            </div>
+            <form class="l-mar-top-3 responsive-form" id="login_form" method="post" action="/signup">
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='MMycqOe2476jScnxboN8pX463opJ1aoR' /></div>
+                <input type="hidden" name="auth_backend" value="user_password" />
+                <input type="hidden" name="referrer" value='' />
+                <input type="hidden" name="forward" value='' />
+                <input type="hidden" name="skip_splash" value='' />
+                <input type="hidden" name="signup_page" value='' />
+                <input type="hidden" name="user_type" value='' />
+                <input type="hidden" name="user_type_sig" value='' />
+                <div class="js-notification l-mar-top-3"></div>
+                <div class="js-current-component">
 
 
-        
+                    <div class="l-mar-top-3">
+                        <label class="is-hidden-accessible" for="signup-email">Email address</label>
+                        <input name="email" type="email" placeholder="Email" value="" id="signup-email">
+                        <div class="js-error-for-email form__field-error is-hidden"></div>
+                    </div>
+                    <div class="l-mar-top-3">
+                        <label class="is-hidden-accessible" for="signup-password">Password</label>
+                        <input name="password" type="password" placeholder="Password" value="" id="signup-password">
+                        <div class="js-error-for-passwd form__field-error is-hidden"></div>
+                    </div>
+                    <div class="js-captcha-form-row l-mar-top-3 form__row is-hidden">
+                        <div id="js-captcha-field" class="js-captcha-field"></div>
+                        <div class="js-error-for-captcha form__field-error is-hidden"></div>
+                    </div>
+                    <div class="l-mar-top-3" align=center>
+                        <a href="/attendedevents"><button id="toggle" type="button" onclick="myFunction()" class="micro-ticket-box__btn btn btn--epic">Log In</button></a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+        <div id="auth-modal" class="g-cell g-cell--no-gutters g-cell-12-12 g-cell-md-8-12 mfp-hide auth-modal js-auth-modal">
+            <div id="authentication-container" class="text-default auth-container"></div>
+        </div>
+
+
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function() {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+
+                $(window).scroll(function() {
+                    $(".slideanim").each(function() {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
+
 </body>
-</html>
 
+</html>

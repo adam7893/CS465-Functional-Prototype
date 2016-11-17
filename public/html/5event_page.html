@@ -1,244 +1,594 @@
-
 <!DOCTYPE html>
-	<head>
-	<title>FoodFinder</title>
-	 <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png"> 
-</head>
-<body class="lang-en en-us  js-d-track-event-links" data-automation=''>
-    
-<header>
+<html lang="en">
 
-<div id="global-header"
-     class="global-header-container logged-out consumer-header"
-     data-role="header"
-     data-id="main-header"
->
-    <div class="global-header js-global-header">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function goToHomePage() {
+            window.location.href = "1home.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToLoginPage() {
+            window.location.href = "2userlogin.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSignupPage() {
+            window.location.href = "2usersignup.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSearchPage() {
+            window.location.href = "3search.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToResultsPage() {
+            window.location.href = "4results.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToEventPage() {
+            window.location.href = "5event_page.html";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToAttendedEventsPage() {
+            window.location.href = "6attended_events.html";
+        }
+    </script>
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
         
-        <div>
-            <!--<img src=http://www.brandcrowd.com/gallery/brands/thumbs/thumb1476343947821.jpg height = 60px width = 120px>-->
-                    <a href="/"><img src=http://4.bp.blogspot.com/-FL5_D-8hy04/Vo6rLGqiTQI/AAAAAAAAAOA/CH_O9PmbmqU/s1600/foodfinder-free-business-logo-design-template.png
-                        height=60px width=120px></a>
-        </div>
-        <div  role="navigation" position=fixed top=0px right=0px width=200px height=100px float=right>
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .sidebar {
+            background-color: #f6f6f6;
+            color: #f4511e;
+            padding: 50px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+        
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+        
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+        
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+        
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+        
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.5s;
+        }
+        
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+        
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+        .panel-footer {
+            background-color: white !important;
+        }
+        
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        
+        .slideanim {
+            visibility: hidden;
+        }
+        
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+    </style>
+</head>
 
-            <div position=fixed top=0px right=0px width=200px height=100px float=right>
-                    <a href="/attendedevents"><img src= http://lionhallattorneys.com.ng/wp-content/uploads/2015/12/empty-profile.png width=60px max-height=100%></a>
-                    <a href="/signup" align = "right" class="header-link gh-signup primary-link js-d-track-link js-modal-auth show-large" data-modal-auth-action="signup" data-event-action="SignupAttempt" data-event-category="header">Sign up</a>
-                    <a href="/login" align = "right" class="header-link primary-link js-d-track-link js-modal-auth show-large" data-event-action="LoginAttempt" data-event-category="header" data-modal-auth-action="login">Log in</a>        
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#myPage" onclick="goToHomePage();">FoodFinder</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" onclick="goToEventPage();">EVENTS</a></li>
+                    <li><a href="#signup" onclick="goToSignupPage();">SIGN UP</a></li>
+                    <li><a href="#login" onclick="goToLoginPage();">LOG IN</a></li>
+                    <li><a href="#profile" onclick="goToAttendedEventsPage();">PROFILE</a></li>
+                </ul>
             </div>
-            
         </div>
+    </nav>
 
-    </div>
-    
-</div>
+    <!-- Slack Unfurling -->
+    <meta name="twitter:label1" value="Where" />
+    <meta name="twitter:data1" value="2136 W. 95th Street, Chicago, IL" />
+    <meta name="twitter:label2" value="When" />
+    <meta name="twitter:data2" value="Wed, Nov 16, 2016 at 7:00 PM" />
+    <title>Italian Dinner Tickets, Wed, Nov 16, 2016 at 7:00 PM </title>
+    <!--[if lte IE 8]><![if gte IE 9]><![endif]-->
+    <!-- Code inside here is served to everything except browsers less than IE9 -->
+    <script type="text/javascript">
+        window.BENTON_PROPERTIES = {
+            'src': 'https://cdn.evbstatic.com/s3-build/perm_001/c8a2ab/django/js/src/eb/fonts/benton.js',
+            'oldVersions': ['EB.fonts.benton.04-08-2015', 'EB.fonts.benton.10-27-2016'],
+            'version': 'EB.fonts.benton.10-26-2016'
+        };
+    </script>
+    <script type="text/javascript" charset="utf-8" crossorigin="anonymous">
+        ! function(a, b) {
+            if (a.EB = a.EB || {}, EB.renderFonts = function(a) {
+                    for (var c = "", d = b.createElement("style"), e = 0, f; f = a[e]; e++) c += "@font-face{font-family:'Benton Sans';font-weight:" + f.weight + ";font-style:" + f.style + ";src:url(data:application/font-woff;base64," + f.base64 + ") format('woff');}";
+                    d.styleSheet && !d.sheet ? d.styleSheet.cssText = c : d.appendChild(b.createTextNode(c)), b.getElementsByTagName("head")[0].appendChild(d), b.documentElement.className += " font-has-loaded"
+                }, EB.readWriteFontFromLocalStorage = function(a) {
+                    for (var c = 0; c < a.BENTON_PROPERTIES.oldVersions.length; c++) localStorage.removeItem(a.BENTON_PROPERTIES.oldVersions[c]);
+                    var d = JSON.parse(localStorage.getItem(a.BENTON_PROPERTIES.version));
+                    if (d) EB.renderFonts(d);
+                    else {
+                        EB.shouldRenderFonts = !0;
+                        var e = b.createElement("script");
+                        e.src = a.BENTON_PROPERTIES.src, b.getElementsByTagName("head")[0].appendChild(e), setTimeout(function() {
+                            EB.shouldRenderFonts = !1
+                        }, 3e3)
+                    }
+                }, a.localStorage) try {
+                localStorage.setItem("localStorage", 1), localStorage.removeItem("localStorage"), EB.readWriteFontFromLocalStorage(a)
+            } catch (c) {
+                Storage.prototype._setItem = Storage.prototype.setItem, Storage.prototype.setItem = function() {}
+            }
+        }(window, document);
+    </script>
+    <!--[if lte IE 8]><![endif]><![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/production/base_styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/src/smacss/non_modular/global_header.css" />
+    <!-- Grunticon related code -->
+    <script type="text/javascript">
+        // Grunticon loader snippet (feature detection)
+        ! function() {
+            function e(e, n, t) {
+                "use strict";
+                var o = window.document.createElement("link"),
+                    r = n || window.document.getElementsByTagName("script")[0],
+                    a = window.document.styleSheets;
+                return o.rel = "stylesheet", o.href = e, o.media = "only x", r.parentNode.insertBefore(o, r), o.onloadcssdefined = function(e) {
+                    for (var n, t = 0; t < a.length; t++) a[t].href && a[t].href === o.href && (n = !0);
+                    n ? e() : setTimeout(function() {
+                        o.onloadcssdefined(e)
+                    })
+                }, o.onloadcssdefined(function() {
+                    o.media = t || "all"
+                }), o
+            }
 
-</header>
-		
-		<!-- Slack Unfurling -->
-		<meta name="twitter:label1" value="Where" />
-		<meta name="twitter:data1" value="2136 W. 95th Street, Chicago, IL" />
-		<meta name="twitter:label2" value="When" />
-		<meta name="twitter:data2" value="Wed, Nov 16, 2016 at 7:00 PM" />
-		<title>Italian Dinner Tickets, Wed, Nov 16, 2016 at 7:00 PM </title>
-<!--[if lte IE 8]><![if gte IE 9]><![endif]-->
-<!-- Code inside here is served to everything except browsers less than IE9 -->
-<script type="text/javascript">
-	window.BENTON_PROPERTIES = {
-		'src': 'https://cdn.evbstatic.com/s3-build/perm_001/c8a2ab/django/js/src/eb/fonts/benton.js',
-		'oldVersions': ['EB.fonts.benton.04-08-2015','EB.fonts.benton.10-27-2016'],
-		'version': 'EB.fonts.benton.10-26-2016'
-	};
-</script>
-<script type="text/javascript" charset="utf-8" crossorigin="anonymous">!function(a,b){if(a.EB=a.EB||{},EB.renderFonts=function(a){for(var c="",d=b.createElement("style"),e=0,f;f=a[e];e++)c+="@font-face{font-family:'Benton Sans';font-weight:"+f.weight+";font-style:"+f.style+";src:url(data:application/font-woff;base64,"+f.base64+") format('woff');}";d.styleSheet&&!d.sheet?d.styleSheet.cssText=c:d.appendChild(b.createTextNode(c)),b.getElementsByTagName("head")[0].appendChild(d),b.documentElement.className+=" font-has-loaded"},EB.readWriteFontFromLocalStorage=function(a){for(var c=0;c<a.BENTON_PROPERTIES.oldVersions.length;c++)localStorage.removeItem(a.BENTON_PROPERTIES.oldVersions[c]);var d=JSON.parse(localStorage.getItem(a.BENTON_PROPERTIES.version));if(d)EB.renderFonts(d);else{EB.shouldRenderFonts=!0;var e=b.createElement("script");e.src=a.BENTON_PROPERTIES.src,b.getElementsByTagName("head")[0].appendChild(e),setTimeout(function(){EB.shouldRenderFonts=!1},3e3)}},a.localStorage)try{localStorage.setItem("localStorage",1),localStorage.removeItem("localStorage"),EB.readWriteFontFromLocalStorage(a)}catch(c){Storage.prototype._setItem=Storage.prototype.setItem,Storage.prototype.setItem=function(){}}}(window,document);</script>
-<!--[if lte IE 8]><![endif]><![endif]-->
-			<link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/production/base_styles.css" />
-			<link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/src/smacss/non_modular/global_header.css" />
-			<!-- Grunticon related code -->
-<script type="text/javascript">
-	// Grunticon loader snippet (feature detection)
-!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(e){};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
-	// Grunticon conditional loader
-	// Loads one of the following styles depending on the browser's support
-	grunticon([
-		'https://cdn.evbstatic.com/s3-build/perm_001/18d5df/django/css/images/grunticons/styles/icons.data.svg.css',
-		'https://cdn.evbstatic.com/s3-build/perm_001/3ea08a/django/css/images/grunticons/styles/icons.data.png.css',
-		'https://cdn.evbstatic.com/s3-build/perm_001/8ab5e1/django/css/images/grunticons/styles/icons.fallback.css'
-		], grunticon.svgLoadedCallback);
-</script>
-<noscript><link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/images/grunticons/styles/icons.fallback.css" /></noscript>
-<!-- End of Grunticon related code -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/src/smacss/non_modular/listing/bundle.css" />
-			<script type="text/javascript" charset="utf-8" crossorigin="anonymous">(function(w, d) {
-	'use strict';
-	var html = d.documentElement,
-		hasBrowserSupport,
-		featureCount,
-		features = ['transform'], // Array of CSS features you want to detect
-		featureLength = features.length;
-	hasBrowserSupport = function(prop) {
-		var div = document.createElement('div'),
-			vendors = 'Khtml Ms O Moz Webkit'.split(' '),
-			len = vendors.length;
-		if ( prop in div.style ) {
-			return true;
-		}
-		prop = prop.replace(/^[a-z]/, function(val) {
-			return val.toUpperCase();
-		});
-		while(len--) {
-			if ( vendors[len] + prop in div.style ) {
-				// browser supports box-shadow. Do what you need.  
-				// Or use a bang (!) to test if the browser doesn't.  
-				return true;
-			}
-		}
-		return false;
-	};
-	for (featureCount = 0; featureCount < featureLength; featureCount++) {
-		html.className += (hasBrowserSupport(features[featureCount]) ? ' css-' + features[featureCount].toLowerCase() + '-support' : '');
-	}
-})(window, document, undefined);
-</script>
-	</head>
-	<body id="event-page" class="js-d-track-event-links js-listing-page"
-		data-automation="listing2014"
-			data-event-id="28661693898"
-		data-backend-type="SOA"
-		data-should-track-event-click="true"
-		data-should-fire-tracking-beacon="true"
-		data-static-event-cache="false"
-	>
+            function n(e, n) {
+                e.onload = function() {
+                    e.onload = null, n && n.call(e)
+                }, "isApplicationInstalled" in navigator && "onloadcssdefined" in e && e.onloadcssdefined(n)
+            }! function(t) {
+                var o = function(r, a) {
+                    "use strict";
+                    if (r && 3 === r.length) {
+                        var i = t.navigator,
+                            c = t.document,
+                            s = t.Image,
+                            d = !(!c.createElementNS || !c.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect || !c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || t.opera && -1 === i.userAgent.indexOf("Chrome") || -1 !== i.userAgent.indexOf("Series40")),
+                            l = new s;
+                        l.onerror = function() {
+                            o.method = "png", o.href = r[2], e(r[2])
+                        }, l.onload = function() {
+                            var t = 1 === l.width && 1 === l.height,
+                                i = r[t && d ? 0 : t ? 1 : 2];
+                            t && d ? o.method = "svg" : t ? o.method = "datapng" : o.method = "png", o.href = i, n(e(i), a)
+                        }, l.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", c.documentElement.className += " grunticon"
+                    }
+                };
+                o.loadCSS = e, o.onloadCSS = n, t.grunticon = o
+            }(this),
+            function(e, n) {
+                "use strict";
+                var t = n.document,
+                    o = "grunticon:",
+                    r = function(e) {
+                        if (t.attachEvent ? "complete" === t.readyState : "loading" !== t.readyState) e();
+                        else {
+                            var n = !1;
+                            t.addEventListener("readystatechange", function() {
+                                n || (n = !0, e())
+                            }, !1)
+                        }
+                    },
+                    a = function(e) {
+                        return n.document.querySelector('link[href$="' + e + '"]')
+                    },
+                    i = function(e) {
+                        var n, t, r, a, i, c, s = {};
+                        if (n = e.sheet, !n) return s;
+                        t = n.cssRules ? n.cssRules : n.rules;
+                        for (var d = 0; d < t.length; d++) r = t[d].cssText, a = o + t[d].selectorText, i = r.split(");")[0].match(/US\-ASCII\,([^"']+)/), i && i[1] && (c = decodeURIComponent(i[1]), s[a] = c);
+                        return s
+                    },
+                    c = function(e) {
+                        var n, r, a, i;
+                        a = "data-grunticon-embed";
+                        for (var c in e) {
+                            i = c.slice(o.length);
+                            try {
+                                n = t.querySelectorAll(i)
+                            } catch (s) {
+                                continue
+                            }
+                            r = [];
+                            for (var d = 0; d < n.length; d++) null !== n[d].getAttribute(a) && r.push(n[d]);
+                            if (r.length)
+                                for (d = 0; d < r.length; d++) r[d].innerHTML = e[c], r[d].style.backgroundImage = "none", r[d].removeAttribute(a)
+                        }
+                        return r
+                    },
+                    s = function(e) {};
+                e.embedIcons = c, e.getCSS = a, e.getIcons = i, e.ready = r, e.svgLoadedCallback = s, e.embedSVG = s
+            }(grunticon, this)
+        }();
+        // Grunticon conditional loader
+        // Loads one of the following styles depending on the browser's support
+        grunticon([
+            'https://cdn.evbstatic.com/s3-build/perm_001/18d5df/django/css/images/grunticons/styles/icons.data.svg.css',
+            'https://cdn.evbstatic.com/s3-build/perm_001/3ea08a/django/css/images/grunticons/styles/icons.data.png.css',
+            'https://cdn.evbstatic.com/s3-build/perm_001/8ab5e1/django/css/images/grunticons/styles/icons.fallback.css'
+        ], grunticon.svgLoadedCallback);
+    </script>
+    <noscript><link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/images/grunticons/styles/icons.fallback.css" /></noscript>
+    <!-- End of Grunticon related code -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.evbstatic.com/s3-build/22671-rc2016-11-09_12.04-5189353/django/css/src/smacss/non_modular/listing/bundle.css" />
+    <script type="text/javascript" charset="utf-8" crossorigin="anonymous">
+        (function(w, d) {
+            'use strict';
+            var html = d.documentElement,
+                hasBrowserSupport,
+                featureCount,
+                features = ['transform'], // Array of CSS features you want to detect
+                featureLength = features.length;
+            hasBrowserSupport = function(prop) {
+                var div = document.createElement('div'),
+                    vendors = 'Khtml Ms O Moz Webkit'.split(' '),
+                    len = vendors.length;
+                if (prop in div.style) {
+                    return true;
+                }
+                prop = prop.replace(/^[a-z]/, function(val) {
+                    return val.toUpperCase();
+                });
+                while (len--) {
+                    if (vendors[len] + prop in div.style) {
+                        // browser supports box-shadow. Do what you need.  
+                        // Or use a bang (!) to test if the browser doesn't.  
+                        return true;
+                    }
+                }
+                return false;
+            };
+            for (featureCount = 0; featureCount < featureLength; featureCount++) {
+                html.className += (hasBrowserSupport(features[featureCount]) ? ' css-' + features[featureCount].toLowerCase() + '-support' : '');
+            }
+        })(window, document, undefined);
+    </script>
+    </head>
 
-<a id="skip-heading" tabindex="-1" class="is-hidden-accessible">Page Content</a>
-<div class="global-mask"></div>
-		<main role="main" class="">
-	<div class="js-hidden-when-expired event-listing event-listing--has-image " role="article">
-			<!-- Event Listing Header -->
-<div class="notification-box--listing">
-	<div class="js-notification-box" data-id="" data-message="" data-type="aaa" data-close-btn="" data-delay=""></div>
-</div>
-			<div class="g-grid g-grid--page-margin-manual">
-			<!-- Event Listing Body -->
-<div class="event-listing__body l-sm-pad-top-0">
-	<!-- Listing Hero Details -->
-	<div class="listing-hero-details__main-container fx--fade-in fx--delay-4">
-		<div class="g-group">
-			<div class="g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters listing-hero--image-container">
-					<div class="listing-hero__badge-container js-hero-badge-container">
-		<span class="badge--overlay badge-status hide-large badge-price" data-automation="hero-badge">
+
+    <a id="skip-heading" tabindex="-1" class="is-hidden-accessible">Page Content</a>
+    <div class="global-mask"></div>
+    <main role="main" class="">
+        <div class="js-hidden-when-expired event-listing event-listing--has-image " role="article">
+            <!-- Event Listing Header -->
+            <div class="notification-box--listing">
+                <div class="js-notification-box" data-id="" data-message="" data-type="aaa" data-close-btn="" data-delay=""></div>
+            </div>
+            <div class="g-grid g-grid--page-margin-manual">
+                <!-- Event Listing Body -->
+                <div class="event-listing__body l-sm-pad-top-0">
+                    <!-- Listing Hero Details -->
+                    <div class="listing-hero-details__main-container fx--fade-in fx--delay-4">
+                        <div class="g-group">
+                            <div class="g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters listing-hero--image-container">
+                                <div class="listing-hero__badge-container js-hero-badge-container">
+                                    <span class="badge--overlay badge-status hide-large badge-price" data-automation="hero-badge">
 		</span>
-					</div>
-				<div class="listing-hero listing-hero--bkg clrfix fx--delay-6 fx--fade-in">
-						<picture content="http://www.cicis.com/media/1137/pizza_trad_alfredo.png">
-							<source srcset="
+                                </div>
+                                <div class="listing-hero listing-hero--bkg clrfix fx--delay-6 fx--fade-in">
+                                    <picture content="http://www.cicis.com/media/1137/pizza_trad_alfredo.png">
+                                        <source srcset="
 								http://www.cicis.com/media/1137/pizza_trad_alfredo.png 800w
-							"
-							sizes="100vw">
+							" sizes="100vw">
 
-								<img class="listing-hero-image js-picturefill-img listing-image--main"
-									data-automation="listing-hero-image"
-									alt="Italian Dinner"
-								/>
-						</picture>
-				</div>
-			</div>
-			<div class="g-cell g-cell-1-1 g-cell-lg-4-12 g-cell--no-gutters listing-hero__detailed-info">
-				<ul class="listing-panel-actions show-small" role="menubar">
-					<li><a class="js-d-bookmark btn btn--collapsible btn--target is-collapsed btn--opaque l-sm-mar-bot-2 listing-panel-actions__btn" data-eid="28661693898" role="menuitem" data-bookmarked="false" alt="Save">
-						<i class="ico-bookmark"></i><span class="btn--context">SAVE THIS EVENT</span>
-					</a></li>
-				</ul>
-				<div class="l-pad-top-6 l-pad-bot-2 l-lg-pad-bot-4 l-pad-hor-6">
-					<div class="listing-hero-header hide-small ">
-							<time class="listing-hero-date" datetime="2016-11-16">
+                                        <img class="listing-hero-image js-picturefill-img listing-image--main" data-automation="listing-hero-image" alt="Italian Dinner" />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="g-cell g-cell-1-1 g-cell-lg-4-12 g-cell--no-gutters listing-hero__detailed-info">
+                                <ul class="listing-panel-actions show-small" role="menubar">
+                                    <li>
+                                        <a class="js-d-bookmark btn btn--collapsible btn--target is-collapsed btn--opaque l-sm-mar-bot-2 listing-panel-actions__btn" data-eid="28661693898" role="menuitem" data-bookmarked="false" alt="Save">
+                                            <i class="ico-bookmark"></i><span class="btn--context">SAVE THIS EVENT</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="l-pad-top-6 l-pad-bot-2 l-lg-pad-bot-4 l-pad-hor-6">
+                                    <div class="listing-hero-header hide-small ">
+                                        <time class="listing-hero-date" datetime="2016-11-16">
 								<p class="listing-hero-image--month">Nov</p>
 								<p class="listing-hero-image--day">23</p>
 							</time>
-					</div>
-					<div class="listing-hero-body ">
-						<h1 class="listing-hero-title" data-automation="listing-title">Italian Dinner</h1>
-						<meta content="Italian Dinner">
-						<div class="l-mar-top-3">
-<div class="l-media clrfix listing-organizer-title">
-		<div class="l-align-left">
-			<p class="js-d-scroll-to listing-organizer-name text-default" data-d-duration="1500" data-d-offset="-70" data-d-destination="#listing-organizer">
-				by Maria Ricci 
-			</p>
-		</div>
-</div>
+                                    </div>
+                                    <div class="listing-hero-body ">
+                                        <h1 class="listing-hero-title" data-automation="listing-title">Italian Dinner</h1>
+                                        <meta content="Italian Dinner">
+                                        <div class="l-mar-top-3">
+                                            <div class="l-media clrfix listing-organizer-title">
+                                                <div class="l-align-left">
+                                                    <p class="js-d-scroll-to listing-organizer-name text-default" data-d-duration="1500" data-d-offset="-70" data-d-destination="#listing-organizer">
+                                                        by Maria Ricci
+                                                    </p>
+                                                </div>
+                                            </div>
 
-<div class="l-media clrfix listing-organizer-title">
+                                            <div class="l-media clrfix listing-organizer-title">
 
-		<div class="l-align-left">
-		<div class="g-cell g-cell-1-1 g-cell-md-4-12 l-sm-pad-top-1">
-											<P><BR></P>
-										</div>
-			<h2 class="label-primary">Rating</h2>
-			<img src="https://lovingscd.files.wordpress.com/2013/08/4-fork-rating.jpg" alt="Forks" style="width:275px;height:80px; margin-top: 18px; margin-left: 12px">
-		</div>
-</div>
-						</div>
-					</div>
-					<div class="js-display-price-container listing-hero-footer hide-small hide-medium" data-automation="micro-ticket-box-price">
-							<div class="js-display-price">
-	Free
-</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Listing Card Panel -->
-	<div class="listing-panel-wrapper js-listing-panel-wrapper clrfix" role="menu">
-	<div class="listing-panel clrfix sticky-listing-panel-placeholder hide-small"></div>
-	<div class="
+                                                <div class="l-align-left">
+                                                    <div class="g-cell g-cell-1-1 g-cell-md-4-12 l-sm-pad-top-1">
+                                                        <P>
+                                                            <BR>
+                                                        </P>
+                                                    </div>
+                                                    <h2 class="label-primary">Rating</h2>
+                                                    <img src="https://lovingscd.files.wordpress.com/2013/08/4-fork-rating.jpg" alt="Forks" style="width:275px;height:80px; margin-top: 18px; margin-left: 12px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="js-display-price-container listing-hero-footer hide-small hide-medium" data-automation="micro-ticket-box-price">
+                                        <div class="js-display-price">
+                                            Free
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Listing Card Panel -->
+                    <div class="listing-panel-wrapper js-listing-panel-wrapper clrfix" role="menu">
+                        <div class="listing-panel clrfix sticky-listing-panel-placeholder hide-small"></div>
+                        <div class="
 		listing-panel js-sticky-panel sticky-listing-panel sticky clrfix
 	">
-		<div class="g-group g-group--page-margin-reset">
-			<div class="g-cell g-cell-1-1 g-cell-md-5-12 g-cell-lg-6-12 hide-small listing-panel__g-cell">
-				<ul class="listing-panel-actions" role="menubar">
-					
-				</ul>
-				<div class="listing-panel-info__details hide-small hide-medium hide-large l-mar-left-4">
-					<p class="is-truncated listing-title 
+                            <div class="g-group g-group--page-margin-reset">
+                                <div class="g-cell g-cell-1-1 g-cell-md-5-12 g-cell-lg-6-12 hide-small listing-panel__g-cell">
+                                    <ul class="listing-panel-actions" role="menubar">
+
+                                    </ul>
+                                    <div class="listing-panel-info__details hide-small hide-medium hide-large l-mar-left-4">
+                                        <p class="is-truncated listing-title 
 					">Italian Dinner</p>
-						<p class="listing-panel-info__details-datetime is-truncated">
-							Wed, November 23, 2016, 7:00 PM to 10:00 PM CST
-						</p>
-				</div>
-			</div>
-			<div class="g-cell g-cell-1-1 g-cell-md-3-12 g-cell-lg-2-12">
-					<div class="listing-panel-info__price-or-status">
-							<div class="hide-large listing-panel-info__display-price is-truncated js-display-price-container">
-								<div class="js-display-price">
-	Free
-</div>
-							</div>
-					</div>
-			</div>
-			<div class="g-cell g-cell-1-1 g-cell-md-4-12 l-sm-pad-top-1">
-		<div class="listing-panel-info fx--delay-18 fx--fade-in js-listing-panel-info-event-header">
-			<div class="micro-ticket-box
+                                        <p class="listing-panel-info__details-datetime is-truncated">
+                                            Wed, November 23, 2016, 7:00 PM to 10:00 PM CST
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="g-cell g-cell-1-1 g-cell-md-3-12 g-cell-lg-2-12">
+                                    <div class="listing-panel-info__price-or-status">
+                                        <div class="hide-large listing-panel-info__display-price is-truncated js-display-price-container">
+                                            <div class="js-display-price">
+                                                Free
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="g-cell g-cell-1-1 g-cell-md-4-12 l-sm-pad-top-1">
+                                    <div class="listing-panel-info fx--delay-18 fx--fade-in js-listing-panel-info-event-header">
+                                        <div class="micro-ticket-box
 ">
-	<div class="micro-ticket-box__body js-micro-ticket-box__body
+                                            <div class="micro-ticket-box__body js-micro-ticket-box__body
 	">
-		<form class="js-order-registration responsive-form
+                                                <form class="js-order-registration responsive-form
 		" target="_top">
-			<input type="hidden" name="eid" value="28661693898" />
-			<input type="hidden" name="has_javascript" id="has_javascript" value="1" />
-			<input type="hidden" name="source_id" value="f4841d73aa0d11e69cc80ef557e31159" />
-			<input type="hidden" name="payment_type" value="paypal" />
-			<input type="hidden" name="invite" value="" />
-			<input type="hidden" name="legacy_event_page" value="1" />
-			<input type="hidden" name="affiliate" value="es2" />
-			<input type="hidden" name="referrer" value="" />
-			<input type="hidden" name="referral_code" value="" />
-			<input type="hidden" name="w" value="" />
-			<input type="hidden" name="waitlist_code" value="" />
-			<input type="hidden" name="eventpassword" value="" />
-			<span class="js-micro-order-container">
+                                                    <input type="hidden" name="eid" value="28661693898" />
+                                                    <input type="hidden" name="has_javascript" id="has_javascript" value="1" />
+                                                    <input type="hidden" name="source_id" value="f4841d73aa0d11e69cc80ef557e31159" />
+                                                    <input type="hidden" name="payment_type" value="paypal" />
+                                                    <input type="hidden" name="invite" value="" />
+                                                    <input type="hidden" name="legacy_event_page" value="1" />
+                                                    <input type="hidden" name="affiliate" value="es2" />
+                                                    <input type="hidden" name="referrer" value="" />
+                                                    <input type="hidden" name="referral_code" value="" />
+                                                    <input type="hidden" name="w" value="" />
+                                                    <input type="hidden" name="waitlist_code" value="" />
+                                                    <input type="hidden" name="eventpassword" value="" />
+                                                    <span class="js-micro-order-container">
 					<span class="micro-ticket-box__btn-wrapper">
 
 				        <input type="text" placeholder="Enter Number of Guests..." id="i2">
@@ -259,158 +609,164 @@
 
 				        </script>
 					</span>
-			</span>
-		</form>
-	</div>
-</div>
-		</div>
-<script>
-	var ticketModalButtons = document.getElementsByClassName('js-ticket-modal-btn');
-	if (ticketModalButtons && ticketModalButtons.length) {
-		ticketModalButtons[0].addEventListener(
-			'click',
-			function(e) {
-				e.preventDefault();
-				e.target.classList.add('btn--large--loader');
-				e.target.dataset.clicked = 'clicked';
-				e.target.removeEventListener(e.type, arguments.callee);
-			}
-		);
-	}
-</script>
-			</div>
-		</div>
-	</div>
-</div>
+                                                    </span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        var ticketModalButtons = document.getElementsByClassName('js-ticket-modal-btn');
+                                        if (ticketModalButtons && ticketModalButtons.length) {
+                                            ticketModalButtons[0].addEventListener(
+                                                'click',
+                                                function(e) {
+                                                    e.preventDefault();
+                                                    e.target.classList.add('btn--large--loader');
+                                                    e.target.dataset.clicked = 'clicked';
+                                                    e.target.removeEventListener(e.type, arguments.callee);
+                                                }
+                                            );
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-	<!-- Listing Card Info -->
-<section class="listing-info clrfix">
-	<header class="listing-info__header l-md-pad-top-2  g-group g-group--page-margin-reset">
-		<div class="g-cell g-cell-1-1 g-cell-lg-8-12 g-offset-lg-2-12 listing-info__header-container">
-			<h2 class="is-hidden-accessible hide-small">Event Information</h2>
-			<div class="g-cell g-cell-1-1 show-small hide-medium hide-large">
-				<dl class="event-details">
-						<div class="g-group l-mar-vert-6">
-							<div class="g-cell g-cell-2-12 g-cell--no-gutters">
-								<i class="ico-calendar ico--medium"></i><span class="is-hidden-accessible">Share this event</span>
-							</div>
-							<div class="g-cell g-cell-10-12 g-cell--no-gutters">
-								<dt class="label-primary l-mar-bot-2">Date and Time</dt>
-								<dd class="event-details__data">
-									<meta content="2016-11-16T19:00:00-06:00" />
-									<meta content="2016-11-16T22:00:00-06:00" />
-									<time class="clrfix" data-automation='event-details-time'>
+                    <!-- Listing Card Info -->
+                    <section class="listing-info clrfix">
+                        <header class="listing-info__header l-md-pad-top-2  g-group g-group--page-margin-reset">
+                            <div class="g-cell g-cell-1-1 g-cell-lg-8-12 g-offset-lg-2-12 listing-info__header-container">
+                                <h2 class="is-hidden-accessible hide-small">Event Information</h2>
+                                <div class="g-cell g-cell-1-1 show-small hide-medium hide-large">
+                                    <dl class="event-details">
+                                        <div class="g-group l-mar-vert-6">
+                                            <div class="g-cell g-cell-2-12 g-cell--no-gutters">
+                                                <i class="ico-calendar ico--medium"></i><span class="is-hidden-accessible">Share this event</span>
+                                            </div>
+                                            <div class="g-cell g-cell-10-12 g-cell--no-gutters">
+                                                <dt class="label-primary l-mar-bot-2">Date and Time</dt>
+                                                <dd class="event-details__data">
+                                                    <meta content="2016-11-16T19:00:00-06:00" />
+                                                    <meta content="2016-11-16T22:00:00-06:00" />
+                                                    <time class="clrfix" data-automation='event-details-time'>
 										<p>Wed, November 16, 2016</p>
 										<p>7:00 PM – 10:00 PM CST</p>
 										<p class="hide-small hide-medium">
 											<a class="js-add-to-calendar-modal js-d-dialog-trigger" href="#add-to-calendar-modal" data-automation="add-to-calendar">Add to Calendar</a>
 										</p>
 									</time>
-								</dd>
-							</div>
-						</div>
-						<div class="g-group l-mar-top-6 l-md-mar-bot-4 l-lg-mar-bot-6">
-							<div class="g-cell g-cell-2-12 g-cell--no-gutters">
-								<i class="ico-location ico--medium"></i><span class="is-hidden-accessible">Location</span>
-							</div>
-							<div class="g-cell g-cell-10-12 g-cell--no-gutters">
-								<dt class="label-primary l-mar-bot-2">Location</dt>
-								<dd class="event-details__data">
-									<p>The Lab</p>
-										<p>2136 W. 95th Street </p>
-										<p>Chicago, IL </p>
-									<p>
-										<a class="js-d-scroll-to js-scroll-to-map" href="#map-target" data-d-duration="1500" data-d-destination="#map-target">View Map</a>
-										<a class="js-view-map-link is-hidden" href="https://maps.google.com/maps?hl=en&q=41.721286,-87.67634499999997&sll=41.721286,-87.67634499999997&z=13&markers=41.721286,-87.67634499999997" target="_blank">View Map</a>
-									</p>
-								</dd>
-							</div>
-						</div>
-						<div class="g-group l-mar-top-6 l-md-mar-bot-4 l-lg-mar-bot-6">
-							<div class="g-cell g-cell-2-12 g-cell--no-gutters">
-								<i class="ico-friends ico--medium"></i><span class="is-hidden-accessible">Friends Who Are Going</span>
-							</div>
-							<div class="g-cell g-cell-10-12 g-cell--no-gutters">
-								<dd class="event-details__data">
-									<div class="friends-wrapper">
-										<!-- Listing Who is Going -->
-										<div class="js-who-is-going who-is-going">
-	<div class="js-who-is-going-connect is-hidden">
-		<h3 class="label-primary">Friends Who Are Going</h3>
-		<a class="js-fb-connect text-default fb-connect-link" data-automation="see-whos-going"><img class="g-img js-d-retina" src="https://cdn.evbstatic.com/s3-build/perm_001/a937fc/django/images/listings/see-whos-going-facebook-icon.png" data-d-retina-src="https://cdn.evbstatic.com/s3-build/perm_001/e04b30/django/images/listings/see-whos-going-facebook-icon@2x.png " width="60" alt=""/> <p>Connect <span>to Facebook</span></p></a>
-	</div>
-	<div class="js-who-is-going-loading who-is-going-loading who-is-going-wobble" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list l-mar-top-2">
-			<li><i class="ico-person ico--large"></i></li>
-			<li><i class="ico-person ico--large"></i></li>
-			<li><i class="ico-person ico--large"></i></li>
-		</ul>
-	</div>
-	<div class="js-who-is-going-empty who-is-going-empty" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list no-friends">
-			<li class="fb-friend-item no-space">
-				<p class="l-mar-top-2">None yet</p>
-			</li>
-			<li class="fb-friend-item">
-				<a href="#fb-settings-modal" class="btn btn--target is-collapsed js-d-modal js-d-tooltip single-line-tooltip" title='Social settings' data-d-disabled-in-touch="true">
-					<i class="ico-settings"></i><span class="btn--context">Settings</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="js-who-is-going-error who-is-going-error" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list">
-			<li class="fb-friend-item no-space">
-				<p class="l-mar-top-2 fb-connect-error">Whoops! <span>Couldn't connect</span></p>
-			</li>
-			<li class="fb-friend-item">
-				<a href="/social-settings" target="_blank" class="btn btn--target is-collapsed " title='Fix this problem'>
-					<i class="ico-settings"></i><span class="btn--context">Settings</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-									</div>
-								</dd>
-							</div>
-						</div>
-				</dl>
-			</div>
-		</div>
-	</header>
-	<div class="listing-info__body l-sm-pad-vert-0 l-sm-pad-vert-6 clrfix g-group g-group--page-margin-reset">
-		<div class="g-cell g-cell-1-1 g-cell-lg-10-12 g-offset-lg-1-12 l-mar-stack l-section-stack">
-			<div class="g-group">
-				<div class="g-cell g-cell-1-1 g-cell-md-7-12 g-cell--no-gutters l-lg-pad-right-6">
-						<div class="g-group l-lg-mar-bot-6 l-md-mar-bot-4 l-pad-bot-6 ">
-							<div class="g-cell g-cell-2-12 show-small">
-								<i class="ico-document ico--medium"></i><span class="is-hidden-accessible">Event description</span>
-							</div>
-							<div class="g-cell g-cell-10-12 g-cell-md-1-1">
-							<div class="js-xd-read-more-contents l-mar-top-3">
-											<P><BR></P>
-										</div>
-									<h2 class="label-primary">Description</h2>
-								<div class="has-user-generated-content js-d-read-more read-more js-read-more read-more--medium-down" >
-									<div class="js-xd-read-more-toggle-view read-more__toggle-view">
-										<div class="js-xd-read-more-contents l-mar-top-3">
-											<!-- <P>Join me at November's Italian Dinner to anonymously submit topics and questions about love, life, and love lives. They'll be a facilitated discussion over food and drinks, with tools to grow and guide you until we meet again. At the Italian Dinner, Queen's come together to discuss, relax, relate, and release. From crown-building activities to the facilitated discussion of those topics we've been dying to talk about, this is a positive refresher in the heart of the busy month. I'll be discussing affirming self-love, when and when not to argue, and the threat of me being my sister's keeper. What are you bringing to the table? </P> -->
-											<P>Join us for an authentic Italian Dinner this Wednesday, November 23rd from 7:00 PM to 10:00 PM CST at the Thomas M. Siebel Center. Whether you're looking for a quick bite to eat, or just craving some good pizza, this is the place to be!</P>
-<P><BR></P>
-										</div>
-									</div>
-									<div class="js-xd-read-more-toggle-director read-more__toggle-director l-pad-bot-4 l-sm-pad-bot-3">
-										<a href="javascript://" class="read-more__more" data-read-type="ReadMore" data-checkpoint-name="read_more">Read more</a>
-										<a href="javascript://" class="read-more__less" data-read-type="ReadLess" data-checkpoint-name="read_less">Read less</a>
-									</div>
-								</div>
-							</div>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                        <div class="g-group l-mar-top-6 l-md-mar-bot-4 l-lg-mar-bot-6">
+                                            <div class="g-cell g-cell-2-12 g-cell--no-gutters">
+                                                <i class="ico-location ico--medium"></i><span class="is-hidden-accessible">Location</span>
+                                            </div>
+                                            <div class="g-cell g-cell-10-12 g-cell--no-gutters">
+                                                <dt class="label-primary l-mar-bot-2">Location</dt>
+                                                <dd class="event-details__data">
+                                                    <p>The Lab</p>
+                                                    <p>2136 W. 95th Street </p>
+                                                    <p>Chicago, IL </p>
+                                                    <p>
+                                                        <a class="js-d-scroll-to js-scroll-to-map" href="#map-target" data-d-duration="1500" data-d-destination="#map-target">View Map</a>
+                                                        <a class="js-view-map-link is-hidden" href="https://maps.google.com/maps?hl=en&q=41.721286,-87.67634499999997&sll=41.721286,-87.67634499999997&z=13&markers=41.721286,-87.67634499999997" target="_blank">View Map</a>
+                                                    </p>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                        <div class="g-group l-mar-top-6 l-md-mar-bot-4 l-lg-mar-bot-6">
+                                            <div class="g-cell g-cell-2-12 g-cell--no-gutters">
+                                                <i class="ico-friends ico--medium"></i><span class="is-hidden-accessible">Friends Who Are Going</span>
+                                            </div>
+                                            <div class="g-cell g-cell-10-12 g-cell--no-gutters">
+                                                <dd class="event-details__data">
+                                                    <div class="friends-wrapper">
+                                                        <!-- Listing Who is Going -->
+                                                        <div class="js-who-is-going who-is-going">
+                                                            <div class="js-who-is-going-connect is-hidden">
+                                                                <h3 class="label-primary">Friends Who Are Going</h3>
+                                                                <a class="js-fb-connect text-default fb-connect-link" data-automation="see-whos-going"><img class="g-img js-d-retina" src="https://cdn.evbstatic.com/s3-build/perm_001/a937fc/django/images/listings/see-whos-going-facebook-icon.png" data-d-retina-src="https://cdn.evbstatic.com/s3-build/perm_001/e04b30/django/images/listings/see-whos-going-facebook-icon@2x.png " width="60" alt="" />
+                                                                    <p>Connect <span>to Facebook</span></p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="js-who-is-going-loading who-is-going-loading who-is-going-wobble" style="display: none;">
+                                                                <h3 class="label-primary">Friends Attending</h3>
+                                                                <ul class="grouped-ico js-friend-list l-mar-top-2">
+                                                                    <li><i class="ico-person ico--large"></i></li>
+                                                                    <li><i class="ico-person ico--large"></i></li>
+                                                                    <li><i class="ico-person ico--large"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="js-who-is-going-empty who-is-going-empty" style="display: none;">
+                                                                <h3 class="label-primary">Friends Attending</h3>
+                                                                <ul class="grouped-ico js-friend-list no-friends">
+                                                                    <li class="fb-friend-item no-space">
+                                                                        <p class="l-mar-top-2">None yet</p>
+                                                                    </li>
+                                                                    <li class="fb-friend-item">
+                                                                        <a href="#fb-settings-modal" class="btn btn--target is-collapsed js-d-modal js-d-tooltip single-line-tooltip" title='Social settings' data-d-disabled-in-touch="true">
+                                                                            <i class="ico-settings"></i><span class="btn--context">Settings</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="js-who-is-going-error who-is-going-error" style="display: none;">
+                                                                <h3 class="label-primary">Friends Attending</h3>
+                                                                <ul class="grouped-ico js-friend-list">
+                                                                    <li class="fb-friend-item no-space">
+                                                                        <p class="l-mar-top-2 fb-connect-error">Whoops! <span>Couldn't connect</span></p>
+                                                                    </li>
+                                                                    <li class="fb-friend-item">
+                                                                        <a href="/social-settings" target="_blank" class="btn btn--target is-collapsed " title='Fix this problem'>
+                                                                            <i class="ico-settings"></i><span class="btn--context">Settings</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="listing-info__body l-sm-pad-vert-0 l-sm-pad-vert-6 clrfix g-group g-group--page-margin-reset">
+                            <div class="g-cell g-cell-1-1 g-cell-lg-10-12 g-offset-lg-1-12 l-mar-stack l-section-stack">
+                                <div class="g-group">
+                                    <div class="g-cell g-cell-1-1 g-cell-md-7-12 g-cell--no-gutters l-lg-pad-right-6">
+                                        <div class="g-group l-lg-mar-bot-6 l-md-mar-bot-4 l-pad-bot-6 ">
+                                            <div class="g-cell g-cell-2-12 show-small">
+                                                <i class="ico-document ico--medium"></i><span class="is-hidden-accessible">Event description</span>
+                                            </div>
+                                            <div class="g-cell g-cell-10-12 g-cell-md-1-1">
+                                                <div class="js-xd-read-more-contents l-mar-top-3">
+                                                    <P>
+                                                        <BR>
+                                                    </P>
+                                                </div>
+                                                <h2 class="label-primary">Description</h2>
+                                                <div class="has-user-generated-content js-d-read-more read-more js-read-more read-more--medium-down">
+                                                    <div class="js-xd-read-more-toggle-view read-more__toggle-view">
+                                                        <div class="js-xd-read-more-contents l-mar-top-3">
+                                                            <!-- <P>Join me at November's Italian Dinner to anonymously submit topics and questions about love, life, and love lives. They'll be a facilitated discussion over food and drinks, with tools to grow and guide you until we meet again. At the Italian Dinner, Queen's come together to discuss, relax, relate, and release. From crown-building activities to the facilitated discussion of those topics we've been dying to talk about, this is a positive refresher in the heart of the busy month. I'll be discussing affirming self-love, when and when not to argue, and the threat of me being my sister's keeper. What are you bringing to the table? </P> -->
+                                                            <P>Join us for an authentic Italian Dinner this Wednesday, November 23rd from 7:00 PM to 10:00 PM CST at the Thomas M. Siebel Center. Whether you're looking for a quick bite to eat, or just craving some good pizza, this is the place to be!</P>
+                                                            <P>
+                                                                <BR>
+                                                            </P>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js-xd-read-more-toggle-director read-more__toggle-director l-pad-bot-4 l-sm-pad-bot-3">
+                                                        <a href="javascript://" class="read-more__more" data-read-type="ReadMore" data-checkpoint-name="read_more">Read more</a>
+                                                        <a href="javascript://" class="read-more__less" data-read-type="ReadLess" data-checkpoint-name="read_less">Read less</a>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-							<!-- 		<div class="g-cell g-cell-10-12 g-cell-md-1-1">
+                                            <!-- 		<div class="g-cell g-cell-10-12 g-cell-md-1-1">
 									<h2 class="label-primary">Rating</h2>
 								<div class="has-user-generated-content js-d-read-more read-more js-read-more read-more--medium-down" >
 									<div class="js-xd-read-more-toggle-view read-more__toggle-view">
@@ -425,218 +781,261 @@
 									</div>
 								</div>
 							</div> -->
-						</div>
-							<div class="g-group l-lg-mar-bot-6 l-md-mar-bot-4 l-pad-bot-6">
-								<div class="g-cell g-cell-2-12 show-small">
-									<i class="ico-cash ico--medium"></i><
-								</div>
-								<div class="g-cell g-cell-10-12 g-cell-md-12-12">
-								</div>
-							</div>
-						<div class="g-group">
-							<div class="g-cell g-cell-10-12 g-cell-md-12-12">
-								<div class="listing-info__footer clrfix">
-									<div class="share-wrapper l-sm-mar-bot-4">
-										<!-- Listing Share Options -->
-										<div class="js-share-wrapper l-sm-align-left">
-										</div>
-									</div>
-									<!-- Fallback anchor for the link to the ticket area -->
-									<span id="listing-ticket"></span>
-								</div>
-							</div>
-						</div>
-				</div>
-				<div class="g-cell g-cell-12-12 g-cell-md-4-12 g-offset-md-1-12 g-cell--no-gutters l-lg-pad-left-6 hide-small">
-					<dl class="event-details l-lg-mar-left-6 l-lg-pad-left-6">
-						<div class="js-xd-read-more-contents l-mar-top-3">
-												<P><BR></P>
-											</div>
-								<dt class="label-primary l-mar-bot-2" data-automation="listing-info-language">Date and Time</dt>
-								<dd class="event-details__data">
-									<time class="clrfix" data-automation='event-details-time'>
+                                        </div>
+                                        <div class="g-group l-lg-mar-bot-6 l-md-mar-bot-4 l-pad-bot-6">
+                                            <div class="g-cell g-cell-2-12 show-small">
+                                                <i class="ico-cash ico--medium"></i>
+                                                < </div>
+                                                    <div class="g-cell g-cell-10-12 g-cell-md-12-12">
+                                                    </div>
+                                            </div>
+                                            <div class="g-group">
+                                                <div class="g-cell g-cell-10-12 g-cell-md-12-12">
+                                                    <div class="listing-info__footer clrfix">
+                                                        <div class="share-wrapper l-sm-mar-bot-4">
+                                                            <!-- Listing Share Options -->
+                                                            <div class="js-share-wrapper l-sm-align-left">
+                                                            </div>
+                                                        </div>
+                                                        <!-- Fallback anchor for the link to the ticket area -->
+                                                        <span id="listing-ticket"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="g-cell g-cell-12-12 g-cell-md-4-12 g-offset-md-1-12 g-cell--no-gutters l-lg-pad-left-6 hide-small">
+                                            <dl class="event-details l-lg-mar-left-6 l-lg-pad-left-6">
+                                                <div class="js-xd-read-more-contents l-mar-top-3">
+                                                    <P>
+                                                        <BR>
+                                                    </P>
+                                                </div>
+                                                <dt class="label-primary l-mar-bot-2" data-automation="listing-info-language">Date and Time</dt>
+                                                <dd class="event-details__data">
+                                                    <time class="clrfix" data-automation='event-details-time'>
 										<p>Wed, November 23, 2016</p>
 										<p>7:00 PM to 10:00 PM CST</p>
 											<p class="hide-small hide-medium">
 												<a class="js-add-to-calendar-modal js-d-dialog-trigger" href="#add-to-calendar-modal" data-automation="add-to-calendar">Add to Calendar</a>
 											</p>
 									</time>
-							</dd>
-							<dt class="label-primary l-mar-bot-2">Location</dt>
-							<dd class="event-details__data">
-								<p>Thomas M. Siebel Center </p>
-									<p>2201 N Goodwin Ave </p>
-									<p>Urbana, IL 61801 </p>
-								<p>
-									<a class="js-d-scroll-to js-scroll-to-map" href="#map-target" data-d-duration="1500" data-d-destination="#map-target">View Map</a>
-									<a class="js-view-map-link is-hidden" href="https://maps.google.com/maps?hl=en&q=41.721286,-87.67634499999997&sll=41.721286,-87.67634499999997&z=13&markers=41.721286,-87.67634499999997" target="_blank">View Map</a>
-								</p>
-							</dd>
-							<div class="friends-wrapper">
-								<!-- Listing Who is Going -->
-								<div class="js-who-is-going who-is-going">
-	<div class="js-who-is-going-connect is-hidden">
-		<h3 class="label-primary">Friends Who Are Going</h3>
-		<a class="js-fb-connect text-default fb-connect-link" data-automation="see-whos-going"><img class="g-img js-d-retina" src="https://cdn.evbstatic.com/s3-build/perm_001/a937fc/django/images/listings/see-whos-going-facebook-icon.png" data-d-retina-src="https://cdn.evbstatic.com/s3-build/perm_001/e04b30/django/images/listings/see-whos-going-facebook-icon@2x.png " width="60" alt=""/> <p>Connect <span>to Facebook</span></p></a>
-	</div>
-	<div class="js-who-is-going-loading who-is-going-loading who-is-going-wobble" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list l-mar-top-2">
-			<li><i class="ico-person ico--large"></i></li>
-			<li><i class="ico-person ico--large"></i></li>
-			<li><i class="ico-person ico--large"></i></li>
-		</ul>
-	</div>
-	<div class="js-who-is-going-empty who-is-going-empty" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list no-friends">
-			<li class="fb-friend-item no-space">
-				<p class="l-mar-top-2">None yet</p>
-			</li>
-			<li class="fb-friend-item">
-				<a href="#fb-settings-modal" class="btn btn--target is-collapsed js-d-modal js-d-tooltip single-line-tooltip" title='Social settings' data-d-disabled-in-touch="true">
-					<i class="ico-settings"></i><span class="btn--context">Settings</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="js-who-is-going-error who-is-going-error" style="display: none;">
-		<h3 class="label-primary">Friends Attending</h3>
-		<ul class="grouped-ico js-friend-list">
-			<li class="fb-friend-item no-space">
-				<p class="l-mar-top-2 fb-connect-error">Whoops! <span>Couldn't connect</span></p>
-			</li>
-			<li class="fb-friend-item">
-				<a href="/social-settings" target="_blank" class="btn btn--target is-collapsed " title='Fix this problem'>
-					<i class="ico-settings"></i><span class="btn--context">Settings</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-							</div>
-					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="js-listing-social-stream"></div>
-	<div class="js-defer-map"></div>
+                                                </dd>
+                                                <dt class="label-primary l-mar-bot-2">Location</dt>
+                                                <dd class="event-details__data">
+                                                    <p>Thomas M. Siebel Center </p>
+                                                    <p>2201 N Goodwin Ave </p>
+                                                    <p>Urbana, IL 61801 </p>
+                                                    <p>
+                                                        <a class="js-d-scroll-to js-scroll-to-map" href="#map-target" data-d-duration="1500" data-d-destination="#map-target">View Map</a>
+                                                        <a class="js-view-map-link is-hidden" href="https://maps.google.com/maps?hl=en&q=41.721286,-87.67634499999997&sll=41.721286,-87.67634499999997&z=13&markers=41.721286,-87.67634499999997" target="_blank">View Map</a>
+                                                    </p>
+                                                </dd>
+                                                <div class="friends-wrapper">
+                                                    <!-- Listing Who is Going -->
+                                                    <div class="js-who-is-going who-is-going">
+                                                        <div class="js-who-is-going-connect is-hidden">
+                                                            <h3 class="label-primary">Friends Who Are Going</h3>
+                                                            <a class="js-fb-connect text-default fb-connect-link" data-automation="see-whos-going"><img class="g-img js-d-retina" src="https://cdn.evbstatic.com/s3-build/perm_001/a937fc/django/images/listings/see-whos-going-facebook-icon.png" data-d-retina-src="https://cdn.evbstatic.com/s3-build/perm_001/e04b30/django/images/listings/see-whos-going-facebook-icon@2x.png " width="60" alt="" />
+                                                                <p>Connect <span>to Facebook</span></p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="js-who-is-going-loading who-is-going-loading who-is-going-wobble" style="display: none;">
+                                                            <h3 class="label-primary">Friends Attending</h3>
+                                                            <ul class="grouped-ico js-friend-list l-mar-top-2">
+                                                                <li><i class="ico-person ico--large"></i></li>
+                                                                <li><i class="ico-person ico--large"></i></li>
+                                                                <li><i class="ico-person ico--large"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="js-who-is-going-empty who-is-going-empty" style="display: none;">
+                                                            <h3 class="label-primary">Friends Attending</h3>
+                                                            <ul class="grouped-ico js-friend-list no-friends">
+                                                                <li class="fb-friend-item no-space">
+                                                                    <p class="l-mar-top-2">None yet</p>
+                                                                </li>
+                                                                <li class="fb-friend-item">
+                                                                    <a href="#fb-settings-modal" class="btn btn--target is-collapsed js-d-modal js-d-tooltip single-line-tooltip" title='Social settings' data-d-disabled-in-touch="true">
+                                                                        <i class="ico-settings"></i><span class="btn--context">Settings</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="js-who-is-going-error who-is-going-error" style="display: none;">
+                                                            <h3 class="label-primary">Friends Attending</h3>
+                                                            <ul class="grouped-ico js-friend-list">
+                                                                <li class="fb-friend-item no-space">
+                                                                    <p class="l-mar-top-2 fb-connect-error">Whoops! <span>Couldn't connect</span></p>
+                                                                </li>
+                                                                <li class="fb-friend-item">
+                                                                    <a href="/social-settings" target="_blank" class="btn btn--target is-collapsed " title='Fix this problem'>
+                                                                        <i class="ico-settings"></i><span class="btn--context">Settings</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-listing-social-stream"></div>
+                            <div class="js-defer-map"></div>
 
-		<section class="listing-map-footer">
-<section class="listing-map-card js-listing-map-card l-align-center is-hidden l-sm-pad-bot-5 l-pad-bot-6" data-automation="event-map-card">
-	<div class="listing-map-card-body g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters l-pad-top-6 l-pad-bot-4">
-		<h2 class="listing-map-card-title text-medium">
-		Italian Dinner
-		<span class="text-body-medium text-body--faint text-header-inline-as-block">at</span>
-		The Lab
-		</h2>
-		<div>
-		<p class="listing-map-card-street-address text-default">
-				2136 W. 95th Street, Chicago, IL
-		</p>
-	</div>
-	</div>
-	<footer class="listing-map-card-footer g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters">
-		<div>
-			<ul class="grouped-ico">
-				<li>
-					<a href="https://maps.google.com?saddr=Current+Location&daddr=41.721286,-87.67634499999997&driving" target="_blank" class="btn btn--target is-collapsed js-drive-directions-link btn--invert">
-						<i class="ico-car"></i><span class="btn--context">By Car</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://maps.google.com?saddr=Current+Location&dirflg=w&daddr=41.721286,-87.67634499999997" target="_blank" class="btn btn--target is-collapsed js-walk-directions-link btn--invert">
-						<i class="ico-walking"></i><span class="btn--context">Walking</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://maps.google.com?saddr=Current+Location&dirflg=r&daddr=41.721286,-87.67634499999997&mode=transit" target="_blank" class="btn btn--target is-collapsed js-transit-directions-link btn--invert">
-						<i class="ico-public-transit"></i><span class="btn--context">Public Transport</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://maps.google.com?saddr=Current+Location&dirflg=b&daddr=41.721286,-87.67634499999997&mode=bicycling" target="_blank" class="btn btn--target is-collapsed js-bike-directions-link btn--invert">
-						<i class="ico-bike"></i><span class="btn--context">Bike</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
-</section>
-		</section>
-	</div>
-</div>
-		</div>
-			<section class="listing-related-events g-grid g-grid--page-margin-manual">
-		<div class="g-cell g-cell-1-1 g-cell--no-gutters related-events js-related-events l-pad-bottom-3">
-		</div>
-	</section>
-	</div>
-		<!-- Event Expired Events V2 -->
-<div id="bookmark-login-popup" class="omnes g-cell g-cell--no-gutters g-cell-1-1 g-cell-md-6-12 g-cell-lg-4-12 mfp-hide">
+                            <section class="listing-map-footer">
+                                <section class="listing-map-card js-listing-map-card l-align-center is-hidden l-sm-pad-bot-5 l-pad-bot-6" data-automation="event-map-card">
+                                    <div class="listing-map-card-body g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters l-pad-top-6 l-pad-bot-4">
+                                        <h2 class="listing-map-card-title text-medium">
+                                            Italian Dinner
+                                            <span class="text-body-medium text-body--faint text-header-inline-as-block">at</span> The Lab
+                                        </h2>
+                                        <div>
+                                            <p class="listing-map-card-street-address text-default">
+                                                2136 W. 95th Street, Chicago, IL
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <footer class="listing-map-card-footer g-cell g-cell-1-1 g-cell-lg-8-12 g-cell--no-gutters">
+                                        <div>
+                                            <ul class="grouped-ico">
+                                                <li>
+                                                    <a href="https://maps.google.com?saddr=Current+Location&daddr=41.721286,-87.67634499999997&driving" target="_blank" class="btn btn--target is-collapsed js-drive-directions-link btn--invert">
+                                                        <i class="ico-car"></i><span class="btn--context">By Car</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://maps.google.com?saddr=Current+Location&dirflg=w&daddr=41.721286,-87.67634499999997" target="_blank" class="btn btn--target is-collapsed js-walk-directions-link btn--invert">
+                                                        <i class="ico-walking"></i><span class="btn--context">Walking</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://maps.google.com?saddr=Current+Location&dirflg=r&daddr=41.721286,-87.67634499999997&mode=transit" target="_blank" class="btn btn--target is-collapsed js-transit-directions-link btn--invert">
+                                                        <i class="ico-public-transit"></i><span class="btn--context">Public Transport</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://maps.google.com?saddr=Current+Location&dirflg=b&daddr=41.721286,-87.67634499999997&mode=bicycling" target="_blank" class="btn btn--target is-collapsed js-bike-directions-link btn--invert">
+                                                        <i class="ico-bike"></i><span class="btn--context">Bike</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </footer>
+                                </section>
+                            </section>
+                        </div>
+                </div>
+            </div>
+            <section class="listing-related-events g-grid g-grid--page-margin-manual">
+                <div class="g-cell g-cell-1-1 g-cell--no-gutters related-events js-related-events l-pad-bottom-3">
+                </div>
+            </section>
+        </div>
+        <!-- Event Expired Events V2 -->
+        <div id="bookmark-login-popup" class="omnes g-cell g-cell--no-gutters g-cell-1-1 g-cell-md-6-12 g-cell-lg-4-12 mfp-hide">
 
-</div>
-	<div class="modal__body">
-		
-	</div>
-</div>
-		</main>
-<footer class="js-hidden-when-expired listing-footer ">
-	<nav class="g-grid">
-	
-	</nav>
-</footer>
-			<section id="lightbox_contact" class="listing-modal contact-organizer-modal g-cell g-cell--no-gutters g-cell-12-12 g-cell-md-8-12 mfp-hide">
-	<h3 class="modal__heading">
-			Contact the organizer
-	</h3>
-	<div class="modal__body js-contact-organizer-form l-align-left">
-		<section id="lightbox_contact_confirmation" class="g-group is-hidden">
-		</section>
-		<section id="lightbox_contact_main_form" class="g-group">
-			<div class="g-cell g-cell-12-12 l-align-center">
-			</div>
-			<div class="g-cell g-cell-12-12">
-				<span id="error_messages" class="responsive-form__field-error"></span>
-			</div>
-			<form id="form_contact_organizer" action="/ajax/contact-organizer/9760375696/28661693898/" method="post" name="contactForm" class="responsive-form"><input type='hidden' name='csrfmiddlewaretoken' value='24640adda984459c9b24e20aca5ec9d5' />
-				<input type="hidden" id="form_contact_organizer_hidden" name="contact_organizer_submit" value="1" />
-				<div class="g-cell g-cell-12-12">
-					<label for="contact_name" class="label-primary">
+        </div>
+        <div class="modal__body">
+
+        </div>
+        </div>
+    </main>
+    <footer class="js-hidden-when-expired listing-footer ">
+        <nav class="g-grid">
+
+        </nav>
+    </footer>
+    <section id="lightbox_contact" class="listing-modal contact-organizer-modal g-cell g-cell--no-gutters g-cell-12-12 g-cell-md-8-12 mfp-hide">
+        <h3 class="modal__heading">
+            Contact the organizer
+        </h3>
+        <div class="modal__body js-contact-organizer-form l-align-left">
+            <section id="lightbox_contact_confirmation" class="g-group is-hidden">
+            </section>
+            <section id="lightbox_contact_main_form" class="g-group">
+                <div class="g-cell g-cell-12-12 l-align-center">
+                </div>
+                <div class="g-cell g-cell-12-12">
+                    <span id="error_messages" class="responsive-form__field-error"></span>
+                </div>
+                <form id="form_contact_organizer" action="/ajax/contact-organizer/9760375696/28661693898/" method="post" name="contactForm" class="responsive-form"><input type='hidden' name='csrfmiddlewaretoken' value='24640adda984459c9b24e20aca5ec9d5' />
+                    <input type="hidden" id="form_contact_organizer_hidden" name="contact_organizer_submit" value="1" />
+                    <div class="g-cell g-cell-12-12">
+                        <label for="contact_name" class="label-primary">
 						Your Name
 					</label>
-				</div>
-				<div class="g-cell g-cell-12-12 g-cell-lg-12-12">
-					<input type="text" id="contact_name" name="from_name" value="" data-automation="organizer-form-name-field"/>
-				</div>
-				<div class="g-cell g-cell-12-12 l-mar-top-2">
-					<label for="contact_email" class="label-primary">
+                    </div>
+                    <div class="g-cell g-cell-12-12 g-cell-lg-12-12">
+                        <input type="text" id="contact_name" name="from_name" value="" data-automation="organizer-form-name-field" />
+                    </div>
+                    <div class="g-cell g-cell-12-12 l-mar-top-2">
+                        <label for="contact_email" class="label-primary">
 						Email Address
 					</label>
-				</div>
-				<div class="g-cell g-cell-12-12 g-cell-lg-12-12">
-					<input type="email" id="contact_email" name="from_email" value="" data-automation="organizer-form-email-field"/>
-				</div>
-				<div class="g-cell g-cell-12-12 l-mar-top-2">
-					<label for="contact_message" class="label-primary">
+                    </div>
+                    <div class="g-cell g-cell-12-12 g-cell-lg-12-12">
+                        <input type="email" id="contact_email" name="from_email" value="" data-automation="organizer-form-email-field" />
+                    </div>
+                    <div class="g-cell g-cell-12-12 l-mar-top-2">
+                        <label for="contact_message" class="label-primary">
 						Message
 					</label>
-				</div>
-				<div class="g-cell g-cell-12-12 g-cell-lg-12-12">
-					<textarea id="contact_message" name="message" rows="7" data-automation="organizer-form-message-field"></textarea>
-				</div>
-				<div id="container_captcha_privacy" class="is-hidden l-mar-top-2">
-					<div class="g-cell g-cell-12-12">
-						<span class="label-primary">
+                    </div>
+                    <div class="g-cell g-cell-12-12 g-cell-lg-12-12">
+                        <textarea id="contact_message" name="message" rows="7" data-automation="organizer-form-message-field"></textarea>
+                    </div>
+                    <div id="container_captcha_privacy" class="is-hidden l-mar-top-2">
+                        <div class="g-cell g-cell-12-12">
+                            <span class="label-primary">
 							Enter the code as shown below:
 						</span>
-					</div>
-					<div class="g-cell g-cell-12-12">
-						<div id="recaptcha_area">
-						</div>
-					</div>
-				</div>
-			</form>
-		</section>
-		
+                        </div>
+                        <div class="g-cell g-cell-12-12">
+                            <div id="recaptcha_area">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <script>
+                $(document).ready(function() {
+                    // Add smooth scrolling to all links in navbar + footer link
+                    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+
+                            // Store hash
+                            var hash = this.hash;
+
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 900, function() {
+
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
+
+                    $(window).scroll(function() {
+                        $(".slideanim").each(function() {
+                            var pos = $(this).offset().top;
+
+                            var winTop = $(window).scrollTop();
+                            if (pos < winTop + 600) {
+                                $(this).addClass("slide");
+                            }
+                        });
+                    });
+                })
+            </script>
+
+</body>
+
+</html>
