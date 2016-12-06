@@ -3,50 +3,14 @@
 
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
-    <title>FoodFinder</title>
+    <title>Bootstrap Theme Company Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        function goToHomePage() {
-            window.location.href = "/";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToLoginPage() {
-            window.location.href = "/login";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToSignupPage() {
-            window.location.href = "/signup";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToSearchPage() {
-            window.location.href = "/search";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToResultsPage() {
-            window.location.href = "/results";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToEventPage() {
-            window.location.href = "/event";
-        }
-    </script>
-    <script type="text/javascript">
-        function goToAttendedEventsPage() {
-            window.location.href = "/attendedevents";
-        }
-    </script>
     <style>
         body {
             font: 400 15px Lato, sans-serif;
@@ -70,10 +34,10 @@
             margin-bottom: 30px;
         }
         
-        .sidebar {
-            background-color: #f6f6f6;
-            color: #f4511e;
-            padding: 50px 25px;
+        .jumbotron {
+            background-color: #f4511e;
+            color: #fff;
+            padding: 100px 25px;
             font-family: Montserrat, sans-serif;
         }
         
@@ -274,307 +238,201 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-                <a class="navbar-brand" href="#myPage" onclick="goToHomePage();">FoodFinder</a> </div>
+                <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about" onclick="goToEventPage();">EVENTS</a></li>
-                    <li><a href="#signup" onclick="goToSignupPage();">SIGN UP</a></li>
-                    <li><a href="#login" onclick="goToLoginPage();">LOG IN</a></li>
-                    <li><a href="#profile" onclick="goToAttendedEventsPage();">PROFILE</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#attendedevents">ATTENDED EVENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <head>
-        <link rel="stylesheet" href="http://www.designcouncil.org.uk/sites/default/files/css/css_ZUqSXzGyifTgtJLZeG5uj_WMMz0wRM1dT1SLubk-rYw.css" />
-        <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-ios-orange-gradient/alphanum/alphanum_uppercase-letter-f/alphanum_uppercase-letter-f_flat-circle-white-on-ios-orange-gradient_512x512.png">
-    </head>
-
-    <body class="menu-closed menu-default not-front no-sidebars page-resources page-resources-search preload">
-        <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-
-
-        <div class="main-canvas container">
-
-            <div id="pjax-container">
-                <div class="page-">
-                    <div class="hero-region">
-                    </div>
-
-                    <div class="breadcrumb-region">
-                    </div>
-
-                    <div class="pre-content-region pre-content">
-
-                        <div class="title-container">
-                            <div class="title slice">
-                                <h1>Search Attended Events</h1>
-                                <div>Enter Cuisine!</div>
-                            </div>
+    <!-- Container (Attended Events Section) -->
+    <div id="attendedevents" class="container-fluid">
+        <div class="text-center">
+            <h2>Attended Event History</h2>
+        </div>
+        <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Anjali's Italian Dinner</h3>
                         </div>
-                        <form class="search-form" method="post" id="search-form">
-                            <div class="container-inline form-wrapper" id="edit-basic">
-                                <div class="form-item form-type-textfield">
-                                    <input placeholder="Search here" type="text" id="edit-keys" size="30" maxlength="255" />
-                                </div>
-
-                                <button id="toggle" type="button" onclick="showDiv()" style="float:center; margin-right:58px; margin-top:10px; margin-bottom:5px; text-align: center; background-color:lightgray; height: 30px">Search</button>
-
-                                <script>
-                                    function showDiv() {
-                                        div = document.getElementById('s1');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art1');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art2');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art3');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art4');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art5');
-                                        div.style.display = "block";
-                                        div = document.getElementById('art6');
-                                        div.style.display = "block";
-                                    }
-                                </script>
-
-                            </div><input type="hidden" name="form_build_id" value="form-Ij-7wEOz7jYzKKqXPe0vkvFZwEvmQYAjrkfftEKNcKg" />
-                            <input type="hidden" name="form_id" value="apachesolr_search_custom_page_search_form" />
-                        </form>
-
+                        <div class="image">
+                            <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/Baked-Penne-1701_640x428.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>Today</h3>
+                            <h4>$15.00</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
                     </div>
-                    <div id="main-content" class="main-content-region magic-grid main-content">
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Lunch at Joe's</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://www.great-chicago-italian-recipes.com/images/pasta_recipes.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>Yesterday</h3>
+                            <h4>$5.99</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Sam's Spaghetti and Meatballs</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://specialmomentsaz.com/wp-content/uploads/2014/03/spaghettiballs.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>12/1/2016</h3>
+                            <h4>$0.29</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Lasagna with Ciucci</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://www.melskitchencafe.com/wp-content/uploads/2013/04/Lasagna-Close-PSD.jpg?x26164" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>11/25/2016</h3>
+                            <h4>$720.00</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Be My Guinea Pigs!!</h3>
+                        </div>
+                        <div class="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdi-_WbjRLpHa0d2nX07DIu4Jseafpyrklx0O-8Dm9ysKOhp1I" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>10/23/2016</h3>
+                            <h4>FREE</h4>
+                            <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Appetizers with Karen</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://specialmomentsaz.com/wp-content/uploads/2014/03/spaghettiballs.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>9/19/2016</h3>
+                            <h4>$28.00</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Mexican Flan</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://acapulcos.net/wp-content/uploads/2012/11/Flan-95798652-300x199.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>9/17/2016</h3>
+                            <h4>$4.99</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Rahul's Butter Chicken</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://i.huffpost.com/gen/823860/images/o-BUTTER-CHICKEN-facebook.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>9/12/2016</h3>
+                            <h4>$7.99</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3>Chang's Chinese Dinner</h3>
+                        </div>
+                        <div class="image">
+                            <img src="http://hivewallpaper.com/wallpaper/2015/03/chinese-food-16-background-wallpaper.jpg" alt="" style="height: 100%; width: 100%;" /></div>
+                        <div class="panel-footer">
+                            <h3>8/29/2016</h3>
+                            <h4>$5.00</h4>
+                        <a href="/event"><button class="btn btn-lg">View Event</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <section class="block-apachesolr-sort-sort slice design-council-slice  block-apachesolr-sort-sort">
-                            <h2 class="title">Sort by</h2>
-                            <form action="/resources/search" method="post" id="apachesolr-sort-sort-form-" accept-charset="UTF-8">
-                                <div class="form-item form-type-select">
-                                    <label for="edit-apachesolr-sort-name">Field</label>
-                                    <select id="edit-apachesolr-sort-name" name="apachesolr_sort_name"><option value="is_field_visits">Popularity</option><option value="ds_created">Date</option><option value="score" selected="selected">Relevancy</option></select>
-                                </div>
-                                <div class="form-item form-type-select">
-                                    <label for="edit-apachesolr-sort-direction">Direction</label>
-                                    <select id="edit-apachesolr-sort-direction" name="apachesolr_sort_direction"><option value="asc" selected="selected">Ascending</option><option value="desc">Descending</option></select>
-                                </div>
-                                <input type="hidden" name="form_build_id" value="form-D2lNp9T0eiZ3689MO_CwLcKLkcEisGd17q2rah5QBro" />
-                                <input type="hidden" name="form_id" value="apachesolr_sort_sort_form_" />
-                                <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Sort results" /></div>
-                            </form>
-                        </section>
-                        <section class="design-council-slice solr-results-slice" id="s1" style="display: none;">
-                            <h2>Search results</h2>
-                            <div class="ds-search-extra"></div>
-                            <div id="search_results_list" class="search-results">
-                                <!-- markup--node-search-result-teaser.tpl.php -->
-                                <article id="art1" style="display: none;" class="ds-markup node node-case-study featured featured-0 view-mode-search_result_teaser case_study-search-result-teaser clearfix">
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+    </footer>
 
-                                    <div class="teaser-thumbnail-container">
-                                        <a class="teaser-thumbnail-wrapper">
-                                            <div class="wide">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdi-_WbjRLpHa0d2nX07DIu4Jseafpyrklx0O-8Dm9ysKOhp1I" alt="" /></div>
-                                            <div class="asset-wrapper asset aid-15886 asset-image">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/hydro.jpg?itok=PVcFJvxn&c=6f8d8d762b985004d9288ed0cb802cba);">
-                                                    <div class="visuallyhidden">
-                                                        <img src="http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/hydro.jpg?itok=PVcFJvxn&amp;c=6f8d8d762b985004d9288ed0cb802cba" alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                                    <div class="teaser-details">
+                    // Store hash
+                    var hash = this.hash;
 
-                                        <h3 class="teaser-title">
-                                            <a "">
-                                                <span class="teaser-text--title"><h3 class="search-result-teaser-title"><a >Pizza Dinner</a></h3></span>
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
 
-                                            </a>
-                                        </h3>
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
 
-                                        <div class="participation">
-                                            <span class="supplemental-info">
-                <a href="/resources/search/bundle/case_study"> </a>11/23/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
+                    var pos = $(this).offset().top;
 
-                                <article id="art2" style="display: none;" class="ds-markup node node-case-study featured featured-1 view-mode-search_result_teaser case_study-search-result-teaser clearfix">
-                                    <div class="teaser-thumbnail-container">
-                                        <a class="teaser-thumbnail-wrapper">
-                                            <div class="wide">
-                                                <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/Baked-Penne-1701_640x428.jpg" alt="" /></div>
-                                            <div class="asset-wrapper asset aid-681 asset-image">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/EDIT.jpg?itok=4D_DgJYN);">
-                                                    <div class="visuallyhidden">
-                                                        <img src="http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/EDIT.jpg?itok=4D_DgJYN" alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
 
-                                    <div class="teaser-details">
-                                        <h3 class="teaser-title">
-                                            <span class="teaser-text--title"><h3 class="search-result-teaser-title"><a >Pasta in Italy</a></h3></span>
-                                        </h3>
-                                        <div class="participation">
-                                            <span class="supplemental-info">11/12/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- markup--node-search-result-teaser.tpl.php -->
-                                <article id="art3" style="display: none;" class="ds-markup node node-  featured featured-2 view-mode-search_result_teaser  -search-result-teaser clearfix">
-                                    <div class="teaser-thumbnail-container">
-                                        <a "">
-                                            <div class="wide">
-                                                <img src="http://www.great-chicago-italian-recipes.com/images/pasta_recipes.jpg" alt="" /></div>
-                                            <div class="asset-wrapper asset aid-15236 asset-image">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/ .jpg?itok=c5RLZKGp&c=da21e32148de4a8ae8e2483365d7b063);">
-                                                    <div class="visuallyhidden">
-                                                        <img alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="teaser-details">
-                                        <h3 class="teaser-title">
-                                            <span class="teaser-text--title"><h3 class="search-result-teaser-title">Authentic Italian Linguine</h3></span>
-                                            <span class="teaser-text--large"></span>
-                                        </h3>
-                                        <div class="participation">
-                                            <span class="supplemental-info">11/7/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- markup--node-search-result-teaser.tpl.php -->
-                                <article id="art4" style="display: none;" class="ds-markup node node-  featured featured-3 view-mode-search_result_teaser  -search-result-teaser clearfix">
-
-                                    <div class="teaser-thumbnail-container">
-                                        <a class="teaser-thumbnail-wrapper">
-                                            <div class="wide">
-                                                <img src="http://specialmomentsaz.com/wp-content/uploads/2014/03/spaghettiballs.jpg" alt="" /></div>
-                                            <div class="asset-wrapper asset aid-15191 asset-image">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/solutions_cover_MAIN.jpg?itok=Wyqj-2PX&c=41f97fa18a76220cef9b8aa799e75b67);">
-                                                    <div class="visuallyhidden">
-                                                        <img src="" alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="teaser-details">
-
-                                        <h3 class="teaser-title">
-                                            <span class="teaser-text--title"><h3 class="search-result-teaser-title">Italian Spaghetti and Meatballs</h3></span>
-                                            <span class="teaser-text--large"></span>
-                                        </h3>
-                                        <div class="participation">
-                                            <span class="supplemental-info">10/05/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <!-- markup--node-search-result-teaser.tpl.php -->
-                                <article id="art5" style="display: none;" class="ds-markup node node-  featured featured-4 view-mode-search_result_teaser  -search-result-teaser clearfix">
-
-
-                                    <div class="teaser-thumbnail-container">
-                                        <a class="teaser-thumbnail-wrapper">
-                                            <div class="wide">
-                                                <img src="http://www.melskitchencafe.com/wp-content/uploads/2013/04/Lasagna-Close-PSD.jpg?x26164">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/vision_cover_MAIN.jpg?itok=xRkAlMrV&c=ed322e33be10578c28f34ee284ad76d5);">
-                                                    <div class="visuallyhidden">
-                                                        <img src="" alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="teaser-details">
-                                        <h3 class="teaser-title">
-                                            <span class="teaser-text--title"><h3 class="search-result-teaser-title">Traditional Italian Lasagna</h3></span>
-                                            <span class="teaser-text--large"></span>
-                                        </h3>
-                                        <div class="participation">
-                                            <span class="supplemental-info">9/21/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <!-- markup--node-search-result-teaser.tpl.php -->
-                                <article id="art6" style="display: none;" class="ds-markup node node-case-study featured featured-5 view-mode-search_result_teaser case_study-search-result-teaser clearfix">
-                                    <div class="teaser-thumbnail-container">
-                                        <a class="teaser-thumbnail-wrapper">
-                                            <div class="wide">
-                                                <img src="http://www.italianfoodforever.com/staging/wp-content/uploads/2008/05/spinachricottaravioli1.jpg" alt="" /></div>
-                                            <div class="asset-wrapper asset aid-15141 asset-image">
-                                                <div class="square" style="background-image:url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/popupparks_main.jpg?itok=qKTBNzgJ&c=3ff89e68de272481f4be765f4aeb14b5);">
-                                                    <div class="visuallyhidden">
-                                                        <img src="http://www.designcouncil.org.uk/sites/default/files/styles/dc_-_4_3_teaser/public/assets/images/popupparks_main.jpg?itok=qKTBNzgJ&amp;c=3ff89e68de272481f4be765f4aeb14b5" alt="" /> </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="teaser-details">
-                                        <h3 class="teaser-title">
-                                            <a class="teaser-text--title">
-                                                <h3 class="search-result-teaser-title">Italian Four Cheese Ravioli
-                                                </h3>
-                                                <span class="teaser-text--large"></span>
-                                            </a>
-                                        </h3>
-                                        <div class="participation">
-                                            <span class="supplemental-info">9/21/2016</span>
-                                        </div>
-                                    </div>
-                                </article>
-                                <div class="mp-level block-menu-block-2 slice design-council-slice block-menu-block block-menu-block " role="navigation">
-                                </div>
-
-
-                                <script>
-                                    $(document).ready(function() {
-                                        // Add smooth scrolling to all links in navbar + footer link
-                                        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                                            // Make sure this.hash has a value before overriding default behavior
-                                            if (this.hash !== "") {
-                                                // Prevent default anchor click behavior
-                                                event.preventDefault();
-
-                                                // Store hash
-                                                var hash = this.hash;
-
-                                                // Using jQuery's animate() method to add smooth page scroll
-                                                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                                                $('html, body').animate({
-                                                    scrollTop: $(hash).offset().top
-                                                }, 900, function() {
-
-                                                    // Add hash (#) to URL when done scrolling (default click behavior)
-                                                    window.location.hash = hash;
-                                                });
-                                            } // End if
-                                        });
-
-                                        $(window).scroll(function() {
-                                            $(".slideanim").each(function() {
-                                                var pos = $(this).offset().top;
-
-                                                var winTop = $(window).scrollTop();
-                                                if (pos < winTop + 600) {
-                                                    $(this).addClass("slide");
-                                                }
-                                            });
-                                        });
-                                    })
-                                </script>
-
-    </body>
+</body>
 
 </html>
