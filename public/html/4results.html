@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/calendar.css" rel="stylesheet">
     <script type="text/javascript">
         function goToHomePage() {
             window.location.href = "/";
@@ -289,14 +291,106 @@
     </nav>
 
 
-    <div class="sidebar text-center col-sm-3 sidenav" style="height:100vh;width:100;">
-        <div style="height:150px;width:100">
+    <div class="sidebar text-center col-sm-3 sidenav" style="height:100vh;width:25%;overflow:scroll;overflow-x:hidden">
+        <div style="width:100">
             <h1>FoodFinder</h1>
             <p>Select your preferences</p>
-            <button type="button" class="btn btn-danger">Time</button>
-            <button type="button" class="btn btn-danger">Price</button>
-            <button type="button" class="btn btn-danger">Cuisine</button>
-            <button type="button" class="btn btn-danger">Location</button>
+
+
+
+            <div class="dropdown">
+
+                <div class="btn-group">
+                    <div width="100px">
+                        <button id="time-button" class="btn btn-sm btn-default" style="color: black">
+            TIME
+            <span class="caret"></span></button>
+                        <div id="time" class="dropdown closed">
+                            <div class="dropdown-menu">
+                                <div>
+                                    <div class="calendar">
+                                        <div class="month">
+                                            <ul>
+                                                <li class="prev">❮</li>
+                                                <li class="next">❯</li>
+                                                <li style="text-align: center">
+                                                    August<br>
+                                                    <span>2016</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <ul class="weekdays">
+                                            <li>Mo</li>
+                                            <li>Tu</li>
+                                            <li>We</li>
+                                            <li>Th</li>
+                                            <li>Fr</li>
+                                            <li>Sa</li>
+                                            <li>Su</li>
+                                        </ul>
+
+                                        <ul id="days" class="days">
+                                        </ul>
+                                        <div style="text-align: center">
+                                            <div style="display: inline-block; margin: 0 10px; color: black">
+                                                Start
+                                                <input id="start-time" type="time" value="">
+                                            </div>
+                                            <div style="display: inline-block; color: black">
+                                                End
+                                                <input id="end-time" type="time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="price-button" class="btn btn-default btn-sm" style="color: black">PRICE
+            <span class="caret"></span></button>
+                        <div id="price" class="dropdown closed">
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li style="color: black">Free</li>
+                                    <li style="color: black">Low ($)</li>
+                                    <li style="color: black">Medium ($$)</li>
+                                    <li style="color: black">High ($$$)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="cuisine-button" class="btn btn-sm btn-default" style="color: black">
+            CUISINE
+            <span class="caret"></span></button>
+                        <div id="cuisine" class="dropdown closed">
+                            <div class="dropdown-menu" style="width:500px">
+                                <ul id="cuisine-list">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="location-button" class="btn btn-default btn-sm" style="color: black">LOCATION
+            <span class="caret"></span></button>
+                        <div id="location" class="dropdown closed">
+                            <div class="dropdown-menu">
+                                <ul id="location-list">
+                                    <li style="color: black">Here</li>
+                                    <li style="color: black">There</li>
+                                    <li style="color: black">Everywhere</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" onclick="goToResultsPage();" style="background-color: #f4511e">Search
+        </button></div>
+            </div>
         </div>
 
         <div style="width:100">
@@ -323,8 +417,9 @@
         </div>
     </div>
 
-    <iframe style="position: absolute; height: 100%; width: 100%; border: none" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCzYyyrm-tOFlvAeBgWry7xHPp95AeWwBc&q=food+near+me+61820" allowfullscreen>
-</iframe>
+    <iframe style="position: absolute; height: 100%; width: 75%; border: none" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCzYyyrm-tOFlvAeBgWry7xHPp95AeWwBc&q=food+near+me+61820"
+        allowfullscreen>
+    </iframe>
 
 
     <!--
@@ -335,9 +430,9 @@
   <form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Email Address" required>
     <button type="button" class="btn btn-danger">Subscribe</button>
-  </form>
-</div>
--->
+                        </form>
+                    </div>
+                    -->
 
 
     <!-- Container (About Section) -->
@@ -634,6 +729,18 @@
                 });
             });
         })
+    </script>
+
+    <script src="javascripts/filter.js"></script>
+    <script src="javascripts/search.js"></script>
+
+    <script>
+        $(document).click(function(event) {
+            var target = $(event.target);
+            delegateClick(target);
+        });
+        setCalendar();
+        setCuisine();
     </script>
 
 </body>

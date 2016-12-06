@@ -1,6 +1,8 @@
 var filters = {
     time: document.getElementById("time"),
-    cuisine: document.getElementById("cuisine")
+    cuisine: document.getElementById("cuisine"),
+    price: document.getElementById("price"),
+    location: document.getElementById("location")
 };
 
 var prevSelectedDayElement = null;
@@ -40,6 +42,12 @@ function delegateClick(target) {
     }
     else if (id === "cuisine-button") {
         filterClicked(window.filters["cuisine"]);
+    }
+    else if (id === "location-button") {
+        filterClicked(window.filters["location"]);
+    }
+    else if (id === "price-button") {
+        filterClicked(window.filters["price"]);
     }
     else if (parentClass === "dropdown-menu") {
         clickCalendar(target);
