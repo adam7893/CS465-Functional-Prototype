@@ -71,11 +71,12 @@
         }
         
         .jumbotron {
-            /*            background-color: #f6f6f6;*/
             background-image: url("../../homepageimage.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             color: #fff;
             padding: 150px 25px;
-            height: 500px;
+            height: 100vh;
             font-family: Montserrat, sans-serif;
         }
         
@@ -291,8 +292,8 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>FoodFinder</h1>
-        <p>Eating made easy.</p>
+        <h1 style="color:#ffffff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">FoodFinder</h1>
+        <p style="color:#ffffff; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Eating made easy.</p>
         <div class="btn-group">
             <button type="button" class="btn btn-primary" onclick="goToSearchPage();">Search for an Event</button>
             <button type="button" class="btn btn-primary" onclick="goToEventPage();">Your Events</button>
