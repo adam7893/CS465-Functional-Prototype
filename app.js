@@ -19,7 +19,7 @@ app.get("/search", function(req, res) {
     res.end(searchPage);
 });
 
-app.post("/search", function(req, res) {
+app.post("/results", function(req, res) {
     // TODO do something with POST
     console.log(req.body);
 });

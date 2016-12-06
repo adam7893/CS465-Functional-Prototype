@@ -139,7 +139,7 @@ function getFilters() {
     
     data["cuisine"] = getCuisine();
     data["user-type"] = window.userType;
-    
+
     postItem(data);
 }
 
@@ -162,7 +162,7 @@ function getCuisine() {
 function postItem(data) {
     $.ajax({
         type: "POST",
-        url: "http://localhost:8000/search",
+        url: "http://localhost:8000/results",
         processData: false,
         contentType: "application/json",
         data: JSON.stringify(data)

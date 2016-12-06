@@ -291,7 +291,7 @@
     </nav>
 
 
-    <div class="sidebar text-center col-sm-3 sidenav" style="height:100vh;width:25%;overflow:scroll;overflow-x:hidden">
+    <div class="sidebar text-center col-sm-3 sidenav" style="height:100vh;width:25%;overflow:scroll">
         <div style="width:100">
             <h1>FoodFinder</h1>
             <p>Select your preferences</p>
@@ -303,10 +303,10 @@
                         <button id="time-button" class="btn btn-sm btn-default" style="color: black">
             TIME
             <span class="caret"></span></button>
-                        <div id="time" class="dropdown closed">
-                            <div class="dropdown-menu">
+                        <div id="time" class="dropdown closed" style="position:absolute">
+                            <div class="dropdown-menu" style="transform: translate(-20%, 0);position:absolute;left:50%;right:auto;">
                                 <div>
-                                    <div class="calendar">
+                                    <div class="calendar" style="width:250px">
                                         <div class="month">
                                             <ul>
                                                 <li class="prev">❮</li>
@@ -319,13 +319,13 @@
                                         </div>
 
                                         <ul class="weekdays">
-                                            <li>Mo</li>
-                                            <li>Tu</li>
-                                            <li>We</li>
-                                            <li>Th</li>
-                                            <li>Fr</li>
-                                            <li>Sa</li>
-                                            <li>Su</li>
+                                            <li style="width: 12.6%;">Mo</li>
+                                            <li style="width: 12.6%;">Tu</li>
+                                            <li style="width: 12.6%;">We</li>
+                                            <li style="width: 12.6%;">Th</li>
+                                            <li style="width: 12.6%;">Fr</li>
+                                            <li style="width: 12.6%;">Sa</li>
+                                            <li style="width: 12.6%;">Su</li>
                                         </ul>
 
                                         <ul id="days" class="days">
@@ -351,10 +351,10 @@
                         <div id="price" class="dropdown closed">
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li style="color: black">Free</li>
-                                    <li style="color: black">Low ($)</li>
-                                    <li style="color: black">Medium ($$)</li>
-                                    <li style="color: black">High ($$$)</li>
+                                    <label style="color:black"><input type="checkbox">Free</input></label>
+                                    <label style="color:black"><input type="checkbox">Low ($)</input></label>
+                                    <label style="color:black"><input type="checkbox">Med ($$)</input></label>
+                                    <label style="color:black"><input type="checkbox">High ($$$)</input></label>
                                 </ul>
                             </div>
                         </div>
@@ -364,7 +364,7 @@
             CUISINE
             <span class="caret"></span></button>
                         <div id="cuisine" class="dropdown closed">
-                            <div class="dropdown-menu" style="width:500px">
+                            <div class="dropdown-menu" style="transform: translate(-30%, 0); width:365px;">
                                 <ul id="cuisine-list">
 
                                 </ul>
@@ -377,16 +377,16 @@
                         <div id="location" class="dropdown closed">
                             <div class="dropdown-menu">
                                 <ul id="location-list">
-                                    <li style="color: black">Here</li>
-                                    <li style="color: black">There</li>
-                                    <li style="color: black">Everywhere</li>
+                                    <label style="color:black"><input type="checkbox">Here</input></label>
+                                    <label style="color:black"><input type="checkbox">There</input></label>
+                                    <label style="color:black"><input type="checkbox">Everywhere</input></label>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" onclick="goToResultsPage();" style="background-color: #f4511e">Search
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" onclick="updateFilters();" style="background-color: #f4511e; color: white">Search
         </button></div>
             </div>
         </div>
@@ -394,10 +394,10 @@
         <div style="width:100">
             <p>Current selection</p>
             <ul class="list-group">
-                <li id="selected-time" class="list-group-item">Time: now-10:00PM</li>
+                <li id="selected-time" class="list-group-item">Time: Now-10:00PM</li>
                 <li id="selected-price" class="list-group-item">Price: $-$$</li>
                 <li id="selected-cuisine" class="list-group-item">Cuisine: Any</li>
-                <li class="list-group-item">Location: Thomas M. Siebel Center for Computer...</li>
+                <li id="selected-location" class="list-group-item">Location: Siebel Center</li>
             </ul>
         </div>
 
@@ -731,6 +731,7 @@
 
     <script src="javascripts/filter.js"></script>
     <script src="javascripts/search.js"></script>
+    <script src="javascripts/results.js"></script>
 
     <script>
         $(document).click(function(event) {
