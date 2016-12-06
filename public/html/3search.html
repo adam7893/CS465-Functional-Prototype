@@ -301,75 +301,53 @@
 
         <div class="dropdown">
 
-<<<<<<< HEAD
-            <div class="btn-group">
-                <div style="display: inline-block">
-                    <button id="time-button" class="btn btn-lg btn-default" style="color: black">
-            TIME
-=======
         <div class="btn-group">
             <div style="display: inline-block">
                 <button id="time-button" class="btn btn-lg btn-default" style="color: black; border-radius:5px; margin-top:50px;">
             TIME 
->>>>>>> b2baf305ff6c01258e3aebb286f375d22b3c316d
             <span class="caret"></span></button>
-                    <div id="time" class="dropdown closed">
-                        <div class="dropdown-menu" style="transform: translate(-50%, 0);position:absolute;left:50%;right:auto;">
-                            <div>
-                                <div class="calendar">
-                                    <div class="month">
-                                        <ul>
-                                            <li class="prev">&#10094;</li>
-                                            <li class="next">&#10095;</li>
-                                            <li style="text-align: center">
-                                                August<br>
-                                                <span>2016</span>
-                                            </li>
-                                        </ul>
+                <div id="time" class="dropdown closed">
+                    <div class="dropdown-menu" style="transform: translate(-50%, 0);position:absolute;left:50%;right:auto;">
+                        <div>
+                            <div class="calendar">
+                                <div class="month">
+                                    <ul>
+                                        <li class="prev">&#10094;</li>
+                                        <li class="next">&#10095;</li>
+                                        <li style="text-align: center">
+                                            August<br>
+                                            <span>2016</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <ul class="weekdays">
+                                    <li>Mo</li>
+                                    <li>Tu</li>
+                                    <li>We</li>
+                                    <li>Th</li>
+                                    <li>Fr</li>
+                                    <li>Sa</li>
+                                    <li>Su</li>
+                                </ul>
+
+                                <ul id="days" class="days">
+                                </ul>
+
+                                <div style="text-align: center">
+                                    <div style="display: inline-block; margin: 0 10px; color: black">
+                                        Start
+                                        <input id="start-time" type="time" value=""></input>
                                     </div>
-
-                                    <ul class="weekdays">
-                                        <li>Mo</li>
-                                        <li>Tu</li>
-                                        <li>We</li>
-                                        <li>Th</li>
-                                        <li>Fr</li>
-                                        <li>Sa</li>
-                                        <li>Su</li>
-                                    </ul>
-
-                                    <ul id="days" class="days">
-                                    </ul>
-
-                                    <div style="text-align: center">
-                                        <div style="display: inline-block; margin: 0 10px; color: black">
-                                            Start
-                                            <input id="start-time" type="time" value=""></input>
-                                        </div>
-                                        <div style="display: inline-block; color: black">
-                                            End
-                                            <input id="end-time" type="time"></input>
-                                        </div>
+                                    <div style="display: inline-block; color: black">
+                                        End
+                                        <input id="end-time" type="time"></input>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">PRICE
-            <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Free</a></li>
-                        <li><a href="#">Low ($)</a></li>
-                        <li><a href="#">Medium ($$)</a></li>
-                        <li><a href="#">High ($$$)</a></li>
-                    </ul>
-                </div>
-                <div style="display: inline-block">
-                    <button id="cuisine-button" class="btn btn-lg btn-default" style="display: inline-block; color: black">
-=======
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown" style= "border-radius:5px; margin-top:50px;">PRICE
@@ -383,41 +361,28 @@
             </div>
             <div style="display: inline-block">
                 <button id="cuisine-button" class="btn btn-lg btn-default" style="display: inline-block; color: black; border-radius:5px; margin-top:50px;">
->>>>>>> b2baf305ff6c01258e3aebb286f375d22b3c316d
             CUISINE
             <span class="caret"></span></button>
-                    <div id="cuisine" class="dropdown closed">
-                        <div class="dropdown-menu" style="width:500px">
-                            <ul id="cuisine-list">
+                <div id="cuisine" class="dropdown closed">
+                    <div class="dropdown-menu" style="width:500px">
+                        <ul id="cuisine-list">
 
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">LOCATION
-=======
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" style="margin-left:30px; margin-top:50px; border-radius: 5px;">LOCATION
->>>>>>> b2baf305ff6c01258e3aebb286f375d22b3c316d
             <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Here</a></li>
-                        <li><a href="#">There</a></li>
-                        <li><a href="#">Everywhere</a></li>
-                    </ul>
-                </div>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Here</a></li>
+                    <li><a href="#">There</a></li>
+                    <li><a href="#">Everywhere</a></li>
+                </ul>
             </div>
-<<<<<<< HEAD
-            <div>
-                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" onclick="goToResultsPage();">Search
-=======
         </div>
         <div>
-            <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" style= "background-color:#f4511e; color:white; margin-right: 30px; margin-top:50px;" onclick="goToResultsPage();">Search
->>>>>>> b2baf305ff6c01258e3aebb286f375d22b3c316d
+            <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" style= "background-color:#f4511e; color:white; border: none; margin-right: 30px; margin-top:50px;" onclick="goToResultsPage();">Search
         </div>
     </div>
 
@@ -430,26 +395,21 @@
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
                     event.preventDefault();
-
                     // Store hash
                     var hash = this.hash;
-
                     // Using jQuery's animate() method to add smooth page scroll
                     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
                     }, 900, function() {
-
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
                 } // End if
             });
-
             $(window).scroll(function() {
                 $(".slideanim").each(function() {
                     var pos = $(this).offset().top;
-
                     var winTop = $(window).scrollTop();
                     if (pos < winTop + 600) {
                         $(this).addClass("slide");
