@@ -11,6 +11,42 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <script type="text/javascript">
+        function goToHomePage() {
+            window.location.href = "/";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToLoginPage() {
+            window.location.href = "/login";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSignupPage() {
+            window.location.href = "/signup";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToSearchPage() {
+            window.location.href = "/search";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToResultsPage() {
+            window.location.href = "/results";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToEventPage() {
+            window.location.href = "/event";
+        }
+    </script>
+    <script type="text/javascript">
+        function goToAttendedEventsPage() {
+            window.location.href = "/attendedevents";
+        }
+    </script>
     <style>
         body {
             font: 400 15px Lato, sans-serif;
@@ -238,10 +274,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </button>
-                <a class="navbar-brand" href="#myPage" onclick="goToHomePage();">FoodFinder</a>
-            </div>
+                <a class="navbar-brand" href="#myPage" onclick="goToHomePage();">FoodFinder</a> </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about" onclick="goToEventPage();">EVENTS</a></li>
